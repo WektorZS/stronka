@@ -52,13 +52,23 @@ export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const { favorites } = useFavorites()
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10)
-    }
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+useEffect(() => {
+  if (isMobileMenuOpen) {
+    document.body.style.overflow = 'hidden'
+    document.body.style.position = 'fixed'
+    document.body.style.width = '100%'
+  } else {
+    document.body.style.overflow = ''
+    document.body.style.position = ''
+    document.body.style.width = ''
+  }
+
+  return () => {
+    document.body.style.overflow = ''
+    document.body.style.position = ''
+    document.body.style.width = ''
+  }
+}, [isMobileMenuOpen])
 
 
   return (
@@ -142,14 +152,17 @@ export function Header() {
 
         {/* MOBILE MENU */}
 {isMobileMenuOpen && (
-  <div className="lg:hidden fixed inset-x-0 top-16 bottom-0 z-50 bg-card/95 backdrop-blur-md border-t border-border">
+  <div className="lg:hidden fixed inset-0 top-16 z-50 bg-card/95 backdrop-blur-md border-t border-border">
     
-    {/* SCROLL CONTAINER (TO JEST KLUCZ) */}
+    {/* SCROLL AREA */}
     <div
       className="h-full overflow-y-auto px-4 py-4"
-      style={{ WebkitOverflowScrolling: 'touch' }}
+      style={{
+        WebkitOverflowScrolling: 'touch',
+        overscrollBehavior: 'contain',
+        touchAction: 'pan-y',
+      }}
     >
-
       {navigation.map((item) => (
         item.children ? (
           <div key={item.name} className="py-2">
@@ -181,7 +194,6 @@ export function Header() {
           </Link>
         )
       ))}
-
     </div>
   </div>
 )}
