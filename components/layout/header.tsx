@@ -60,18 +60,6 @@ export function Header() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  // 🔥 BLOKADA SCROLLA BODY
-  useEffect(() => {
-    if (isMobileMenuOpen) {
-      document.body.style.overflow = 'hidden'
-    } else {
-      document.body.style.overflow = ''
-    }
-
-    return () => {
-      document.body.style.overflow = ''
-    }
-  }, [isMobileMenuOpen])
 
   return (
     <header 
@@ -153,45 +141,46 @@ export function Header() {
         </div>
 
         {/* MOBILE MENU */}
-        {isMobileMenuOpen && (
-          <div className="lg:hidden fixed inset-x-0 top-16 z-50 bg-card/95 backdrop-blur-md border-t border-border h-[calc(100vh-4rem)] overflow-y-auto touch-pan-y">
-            <div className="px-4 py-4 flex flex-col gap-1">
+{isMobileMenuOpen && (
+  <div className="lg:hidden fixed inset-x-0 top-16 z-50 bg-card/95 backdrop-blur-md border-t border-border h-[calc(100vh-4rem)] flex flex-col">
 
-              {navigation.map((item) => (
-                item.children ? (
-                  <div key={item.name} className="py-2">
-                    <div className="px-4 text-sm font-medium text-muted-foreground">
-                      {item.name}
-                    </div>
+    <div className="px-4 py-4 flex flex-col gap-1 overflow-y-auto flex-1 touch-pan-y overscroll-contain">
 
-                    <div className="ml-4 mt-2 flex flex-col gap-1">
-                      {item.children.map((child) => (
-                        <Link
-                          key={child.name}
-                          href={child.href}
-                          onClick={() => setIsMobileMenuOpen(false)}
-                          className="px-4 py-2 text-sm hover:bg-secondary rounded-md"
-                        >
-                          {child.name}
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-                ) : (
-                  <Link
-                    key={item.name}
-                    href={item.href}
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    className="px-4 py-3 text-base font-medium hover:bg-secondary rounded-md"
-                  >
-                    {item.name}
-                  </Link>
-                )
+      {navigation.map((item) => (
+        item.children ? (
+          <div key={item.name} className="py-2">
+            <div className="px-4 text-sm font-medium text-muted-foreground">
+              {item.name}
+            </div>
+
+            <div className="ml-4 mt-2 flex flex-col gap-1">
+              {item.children.map((child) => (
+                <Link
+                  key={child.name}
+                  href={child.href}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="px-4 py-2 text-sm hover:bg-secondary rounded-md"
+                >
+                  {child.name}
+                </Link>
               ))}
-
             </div>
           </div>
-        )}
+        ) : (
+          <Link
+            key={item.name}
+            href={item.href}
+            onClick={() => setIsMobileMenuOpen(false)}
+            className="px-4 py-3 text-base font-medium hover:bg-secondary rounded-md"
+          >
+            {item.name}
+          </Link>
+        )
+      ))}
+
+    </div>
+  </div>
+)}
       </nav>
     </header>
   )
