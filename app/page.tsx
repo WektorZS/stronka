@@ -148,11 +148,16 @@ export default function HomePage() {
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="text-base border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
-                <Link href="/quiz">
-                  Wypełnij quiz
-                </Link>
-              </Button>
+<Button
+  asChild
+  size="lg"
+  variant="outline"
+  className="text-base border-primary-foreground/30 text-black hover:bg-primary-foreground/10"
+>
+  <Link href="/quiz">
+    Wypełnij quiz
+  </Link>
+</Button>
             </div>
           </div>
         </div>
