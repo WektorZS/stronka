@@ -154,7 +154,7 @@ export function Header() {
 
         {/* MOBILE MENU */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden fixed inset-x-0 top-16 z-50 bg-card/95 backdrop-blur-md border-t border-border max-h-[calc(100vh-4rem)] overflow-y-auto overscroll-contain">
+          <div className="lg:hidden fixed inset-x-0 top-16 z-50 bg-card/95 backdrop-blur-md border-t border-border h-[calc(100vh-4rem)] overflow-y-auto touch-pan-y">
             <div className="px-4 py-4 flex flex-col gap-1">
 
               {navigation.map((item) => (
