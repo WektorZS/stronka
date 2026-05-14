@@ -142,9 +142,13 @@ export function Header() {
 
         {/* MOBILE MENU */}
 {isMobileMenuOpen && (
-  <div className="lg:hidden fixed inset-x-0 top-16 z-50 bg-card/95 backdrop-blur-md border-t border-border h-[calc(100vh-4rem)] flex flex-col">
-
-    <div className="px-4 py-4 flex flex-col gap-1 overflow-y-auto flex-1 touch-pan-y overscroll-contain">
+  <div className="lg:hidden fixed inset-x-0 top-16 bottom-0 z-50 bg-card/95 backdrop-blur-md border-t border-border">
+    
+    {/* SCROLL CONTAINER (TO JEST KLUCZ) */}
+    <div
+      className="h-full overflow-y-auto px-4 py-4"
+      style={{ WebkitOverflowScrolling: 'touch' }}
+    >
 
       {navigation.map((item) => (
         item.children ? (
