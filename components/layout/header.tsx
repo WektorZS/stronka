@@ -60,19 +60,27 @@ export function Header() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  // 🔥 BLOKADA SCROLLA BODY
-  useEffect(() => {
-    if (isMobileMenuOpen) {
-      document.body.style.overflow = 'hidden'
-    } else {
-      document.body.style.overflow = ''
-    }
+useEffect(() => {
+  if (isMobileMenuOpen) {
+    document.body.style.position = 'fixed'
+    document.body.style.top = `-${window.scrollY}px`
+    document.body.style.width = '100%'
+  } else {
+    const scrollY = document.body.style.top
 
-    return () => {
-      document.body.style.overflow = ''
-    }
-  }, [isMobileMenuOpen])
+    document.body.style.position = ''
+    document.body.style.top = ''
+    document.body.style.width = ''
 
+    window.scrollTo(0, parseInt(scrollY || '0') * -1)
+  }
+
+  return () => {
+    document.body.style.position = ''
+    document.body.style.top = ''
+    document.body.style.width = ''
+  }
+}, [isMobileMenuOpen])
   return (
     <header 
       className={`sticky top-0 z-50 w-full transition-all duration-300 ${
@@ -154,7 +162,23 @@ export function Header() {
 
         {/* MOBILE MENU */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden fixed inset-x-0 top-16 z-50 bg-card/95 backdrop-blur-md border-t border-border max-h-[calc(100vh-4rem)] overflow-y-auto overscroll-contain touch-pan-y">
+          <div
+  className="
+    lg:hidden
+    fixed
+    inset-x-0
+    top-16
+    z-50
+    bg-card/95
+    backdrop-blur-md
+    border-t
+    border-border
+    h-[calc(100dvh-4rem)]
+    overflow-y-auto
+    overscroll-y-contain
+  "
+  style={{ WebkitOverflowScrolling: 'touch' }}
+>
             <div className="px-4 py-4 flex flex-col gap-1">
 
               {navigation.map((item) => (
