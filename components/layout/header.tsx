@@ -52,24 +52,26 @@ export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const { favorites } = useFavorites()
 
-useEffect(() => {
-  if (isMobileMenuOpen) {
-    document.body.style.overflow = 'hidden'
-    document.body.style.position = 'fixed'
-    document.body.style.width = '100%'
-  } else {
-    document.body.style.overflow = ''
-    document.body.style.position = ''
-    document.body.style.width = ''
-  }
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10)
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
-  return () => {
-    document.body.style.overflow = ''
-    document.body.style.position = ''
-    document.body.style.width = ''
-  }
-}, [isMobileMenuOpen])
+  // 🔥 BLOKADA SCROLLA BODY
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
 
+    return () => {
+      document.body.style.overflow = ''
+    }
+  }, [isMobileMenuOpen])
 
   return (
     <header 
@@ -151,52 +153,45 @@ useEffect(() => {
         </div>
 
         {/* MOBILE MENU */}
-{isMobileMenuOpen && (
-  <div className="lg:hidden fixed inset-0 top-16 z-50 bg-card/95 backdrop-blur-md border-t border-border">
-    
-    {/* SCROLL AREA */}
-    <div
-      className="h-full overflow-y-auto px-4 py-4"
-      style={{
-        WebkitOverflowScrolling: 'touch',
-        overscrollBehavior: 'contain',
-        touchAction: 'pan-y',
-      }}
-    >
-      {navigation.map((item) => (
-        item.children ? (
-          <div key={item.name} className="py-2">
-            <div className="px-4 text-sm font-medium text-muted-foreground">
-              {item.name}
-            </div>
+        {isMobileMenuOpen && (
+          <div className="lg:hidden fixed inset-x-0 top-16 z-50 bg-card/95 backdrop-blur-md border-t border-border max-h-[calc(100vh-4rem)] overflow-y-auto overscroll-contain">
+            <div className="px-4 py-4 flex flex-col gap-1">
 
-            <div className="ml-4 mt-2 flex flex-col gap-1">
-              {item.children.map((child) => (
-                <Link
-                  key={child.name}
-                  href={child.href}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="px-4 py-2 text-sm hover:bg-secondary rounded-md"
-                >
-                  {child.name}
-                </Link>
+              {navigation.map((item) => (
+                item.children ? (
+                  <div key={item.name} className="py-2">
+                    <div className="px-4 text-sm font-medium text-muted-foreground">
+                      {item.name}
+                    </div>
+
+                    <div className="ml-4 mt-2 flex flex-col gap-1">
+                      {item.children.map((child) => (
+                        <Link
+                          key={child.name}
+                          href={child.href}
+                          onClick={() => setIsMobileMenuOpen(false)}
+                          className="px-4 py-2 text-sm hover:bg-secondary rounded-md"
+                        >
+                          {child.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                ) : (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="px-4 py-3 text-base font-medium hover:bg-secondary rounded-md"
+                  >
+                    {item.name}
+                  </Link>
+                )
               ))}
+
             </div>
           </div>
-        ) : (
-          <Link
-            key={item.name}
-            href={item.href}
-            onClick={() => setIsMobileMenuOpen(false)}
-            className="px-4 py-3 text-base font-medium hover:bg-secondary rounded-md"
-          >
-            {item.name}
-          </Link>
-        )
-      ))}
-    </div>
-  </div>
-)}
+        )}
       </nav>
     </header>
   )
