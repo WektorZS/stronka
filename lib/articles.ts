@@ -15,18 +15,18 @@ export const articles: Article[] = [
   {
     slug: 'jak-wybrac-materac',
     title: 'Jak wybrać materac? Kompleksowy poradnik na 2026 rok',
-    excerpt: 'Na co zwrócić uwagę przy zakupie materaca? Omawiamy najważniejsze parametry, typy materacy i radzimy, jak uniknąć błędów przy wyborze materaca do sypialni.',
+    excerpt: 'Na co zwrócić uwagę przy zakupie materaca? Omawiamy najważniejsze parametry, typy materaców i radzimy, jak uniknąć błędów przy wyborze materaca do sypialni.',
     date: '2026-05-01',
     category: 'Poradniki',
-    readTime: '12 min',
-    author: 'Redakcja Test Materacy',
+    readTime: '3 min',
+    author: 'Redakcja Ranking-Materaców.pl',
     tags: ['poradnik', 'zakup materaca', 'wybór materaca'],
     content: `
 ## Wprowadzenie
 
 Wybór odpowiedniego materaca to jedna z najważniejszych decyzji dotyczących wyposażenia sypialni. Spędzamy na nim około jedną trzecią życia, dlatego warto poświęcić czas na dokładne przemyślenie zakupu. W tym poradniku przeprowadzimy Cię przez wszystkie kluczowe aspekty, które należy wziąć pod uwagę.
 
-## Rodzaje materacy
+## Rodzaje materaców
 
 ### Materace piankowe
 Materace piankowe są obecnie najpopularniejszym wyborem na polskim rynku. Wyróżniamy kilka typów pianek:
@@ -81,8 +81,8 @@ Wybór materaca to indywidualna decyzja, która powinna uwzględniać Twoje potr
     excerpt: 'Wyjaśniamy, czym jest gęstość pianki, jakie wartości są optymalne i jak ten parametr wpływa na trwałość, komfort oraz cenę materaca.',
     date: '2026-04-15',
     category: 'Wiedza',
-    readTime: '8 min',
-    author: 'Redakcja Test Materacy',
+    readTime: '2 min',
+    author: 'Redakcja Ranking-Materaców.pl',
     tags: ['gęstość pianki', 'trwałość materaca', 'specyfikacja techniczna'],
     content: `
 ## Czym jest gęstość pianki?
@@ -127,8 +127,8 @@ Gęstość pianki to kluczowy parametr, który warto sprawdzić przed zakupem. Z
     excerpt: 'Poznaj związek między jakością materaca a zdrowym snem. Omawiamy, jak zły materac może wpływać na bóle pleców, jakość wypoczynku i ogólne samopoczucie.',
     date: '2026-04-10',
     category: 'Zdrowie',
-    readTime: '10 min',
-    author: 'Redakcja Test Materacy',
+    readTime: '4 min',
+    author: 'Redakcja Ranking-Materaców.pl',
     tags: ['zdrowy sen', 'kręgosłup', 'bóle pleców', 'jakość snu'],
     content: `
 ## Znaczenie snu dla zdrowia
@@ -193,8 +193,8 @@ Materac to inwestycja w zdrowie. Nie warto oszczędzać na produkcie, na którym
     excerpt: 'Sprawdzamy, które marki oferują najlepsze warunki testowania materaca i na co zwracać uwagę w regulaminach. Nie wszystkie oferty są tak korzystne, jak się wydaje.',
     date: '2026-04-01',
     category: 'Analizy',
-    readTime: '10 min',
-    author: 'Redakcja Test Materacy',
+    readTime: '3 min',
+    author: 'Redakcja Ranking-Materaców.pl',
     tags: ['okres testowy', 'zwrot materaca', 'porównanie ofert'],
     content: `
 ## Dlaczego okres testowy jest ważny?
@@ -247,11 +247,11 @@ Okres testowy to nie tylko marketing – to realne zabezpieczenie Twojego zakupu
   {
     slug: 'materac-piankowy-vs-sprezynowy',
     title: 'Materac piankowy czy sprężynowy? Szczegółowe porównanie',
-    excerpt: 'Porównujemy zalety i wady materacy piankowych oraz sprężynowych. Sprawdź, który typ lepiej sprawdzi się w Twojej sypialni.',
+    excerpt: 'Porównujemy zalety i wady materaców piankowych oraz sprężynowych. Sprawdź, który typ lepiej sprawdzi się w Twojej sypialni.',
     date: '2026-03-20',
     category: 'Poradniki',
-    readTime: '9 min',
-    author: 'Redakcja Test Materacy',
+    readTime: '4 min',
+    author: 'Redakcja Ranking-Materaców.pl',
     tags: ['materac piankowy', 'materac sprężynowy', 'porównanie'],
     content: `
 ## Wprowadzenie
@@ -302,7 +302,7 @@ Wybór między materacem piankowym a sprężynowym to jedna z pierwszych decyzji
 
 ## Podsumowanie
 
-Oba typy materacy mogą zapewnić zdrowy sen, jeśli wybierzesz odpowiedni model dopasowany do swoich potrzeb. Najważniejsze to zwrócić uwagę na jakość wykonania, a nie tylko typ materaca.
+Oba typy materaców mogą zapewnić zdrowy sen, jeśli wybierzesz odpowiedni model dopasowany do swoich potrzeb. Najważniejsze to zwrócić uwagę na jakość wykonania, a nie tylko typ materaca.
     `,
   },
   {
@@ -311,8 +311,8 @@ Oba typy materacy mogą zapewnić zdrowy sen, jeśli wybierzesz odpowiedni model
     excerpt: 'Praktyczne wskazówki dotyczące pielęgnacji materaca. Jak przedłużyć jego żywotność i utrzymać higienę w sypialni.',
     date: '2026-03-10',
     category: 'Poradniki',
-    readTime: '6 min',
-    author: 'Redakcja Test Materacy',
+    readTime: '3 min',
+    author: 'Redakcja Ranking-Materaców.pl',
     tags: ['pielęgnacja', 'higiena', 'czyszczenie materaca'],
     content: `
 ## Regularne obracanie materaca
@@ -375,8 +375,8 @@ Właściwa pielęgnacja może znacząco przedłużyć żywotność materaca. Reg
     excerpt: 'Poznaj cykl snu i dowiedz się, jak poszczególne fazy wpływają na regenerację organizmu. Praktyczna wiedza o fizjologii snu.',
     date: '2026-03-01',
     category: 'Zdrowie',
-    readTime: '8 min',
-    author: 'Redakcja Test Materacy',
+    readTime: '2 min',
+    author: 'Redakcja Ranking-Materaców.pl',
     tags: ['fazy snu', 'cykl snu', 'REM', 'zdrowie'],
     content: `
 ## Cykl snu
@@ -448,8 +448,8 @@ Zrozumienie faz snu pomaga docenić znaczenie nieprzerwanego, głębokiego wypoc
     excerpt: 'Wybór materaca dla dwóch osób to wyzwanie. Różne preferencje, wagi i pozycje snu – jak znaleźć kompromis? Praktyczne porady dla par.',
     date: '2026-02-20',
     category: 'Poradniki',
-    readTime: '7 min',
-    author: 'Redakcja Test Materacy',
+    readTime: '3 min',
+    author: 'Redakcja Ranking-Materaców.pl',
     tags: ['materac dla par', 'wybór materaca', 'dwuosobowy'],
     content: `
 ## Wyzwania przy wyborze materaca dla pary
@@ -511,8 +511,8 @@ Wybór materaca dla pary wymaga kompromisu, ale istnieją rozwiązania dla róż
     excerpt: 'Dla osób z alergią wybór materaca ma szczególne znaczenie. Dowiedz się, jakie materiały i właściwości szukać, by zminimalizować objawy alergii.',
     date: '2026-02-10',
     category: 'Zdrowie',
-    readTime: '8 min',
-    author: 'Redakcja Test Materacy',
+    readTime: '2 min',
+    author: 'Redakcja Ranking-Materaców.pl',
     tags: ['alergia', 'hipoalergiczny', 'roztocza', 'zdrowie'],
     content: `
 ## Alergie a materac
@@ -533,7 +533,7 @@ Najlepsze dla alergików:
 - **Włókna syntetyczne** – łatwe do czyszczenia
 
 Unikaj:
-- Materacy sprężynowych z naturalnymi wypełnieniami
+- Materaców sprężynowych z naturalnymi wypełnieniami
 - Wełny i pierza
 - Materiałów o otwartej strukturze
 
@@ -561,7 +561,7 @@ Unikaj:
 
 ## Certyfikaty hipoalergiczne
 
-Szukaj materacy z certyfikatami:
+Szukaj materaców z certyfikatami:
 - OEKO-TEX Standard 100
 - CertiPUR-US
 - ECARF (European Centre for Allergy Research Foundation)
@@ -577,8 +577,8 @@ Dla alergika materac to nie tylko kwestia komfortu, ale i zdrowia. Wybierz model
     excerpt: 'Twoja ulubiona pozycja snu powinna wpływać na wybór materaca. Sprawdź, jaka twardość jest optymalna dla śpiących na boku, plecach i brzuchu.',
     date: '2026-02-01',
     category: 'Poradniki',
-    readTime: '7 min',
-    author: 'Redakcja Test Materacy',
+    readTime: '4 min',
+    author: 'Redakcja Ranking-Materaców.pl',
     tags: ['pozycja snu', 'twardość materaca', 'dopasowanie'],
     content: `
 ## Znaczenie pozycji snu
@@ -644,12 +644,12 @@ Najmniej zalecana pozycja (około 10% ludzi):
 Wielu ludzi zmienia pozycje podczas snu. W takim przypadku:
 
 - Wybierz materac średnio-twardy (uniwersalny)
-- Szukaj materacy z dobrą sprężystością
+- Szukaj materaców z dobrą sprężystością
 - Rozważ materace strefowe
 
 ## Podsumowanie
 
-Pozycja snu to kluczowy czynnik przy wyborze materaca. Pamiętaj też o wadze – cięższe osoby potrzebują twardszych materacy niezależnie od pozycji. W razie wątpliwości skorzystaj z okresu testowego.
+Pozycja snu to kluczowy czynnik przy wyborze materaca. Pamiętaj też o wadze – cięższe osoby potrzebują twardszych materaców niezależnie od pozycji. W razie wątpliwości skorzystaj z okresu testowego.
     `,
   },
 ]
