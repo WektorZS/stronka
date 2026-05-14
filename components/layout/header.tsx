@@ -179,11 +179,14 @@ useEffect(() => {
   "
   style={{ WebkitOverflowScrolling: 'touch' }}
 >
-            <div className="px-4 py-4 flex flex-col gap-1">
+            <div className="px-4 py-2 flex flex-col">
 
               {navigation.map((item) => (
                 item.children ? (
-                  <div key={item.name} className="py-2">
+                  <div
+  key={item.name}
+  className="py-2 border-b border-border/60"
+>
                     <div className="px-4 text-sm font-medium text-muted-foreground">
                       {item.name}
                     </div>
@@ -194,7 +197,15 @@ useEffect(() => {
                           key={child.name}
                           href={child.href}
                           onClick={() => setIsMobileMenuOpen(false)}
-                          className="px-4 py-2 text-sm hover:bg-secondary rounded-md"
+                          className="
+  px-4
+  py-2
+  text-sm
+  hover:bg-secondary
+  transition-colors
+  border-b
+  border-border/40
+"
                         >
                           {child.name}
                         </Link>
@@ -206,7 +217,16 @@ useEffect(() => {
                     key={item.name}
                     href={item.href}
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="px-4 py-3 text-base font-medium hover:bg-secondary rounded-md"
+                    className="
+  px-4
+  py-3
+  text-base
+  font-medium
+  hover:bg-secondary
+  transition-colors
+  border-b
+  border-border/60
+"
                   >
                     {item.name}
                   </Link>
