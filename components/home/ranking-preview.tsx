@@ -107,23 +107,23 @@ export function RankingPreview() {
                     {mattress.name}
                   </h3>
 
-                  <div className="flex items-center gap-2 flex-wrap mb-3">
-                    <Badge variant="secondary" className="text-xs">
-                      {mattress.specs.warranty} gwarancji
-                    </Badge>
+<div className="flex items-center gap-2 flex-wrap mb-3">
+  <Badge variant="secondary" className="text-xs">
+    {mattress.specs.warranty} gwarancji
+  </Badge>
 
-                    {mattress.specs.trialType === 'refund' && (
-                      <Badge className="bg-green-600 text-white border-0 text-xs">
-                        Pełny zwrot pieniędzy
-                      </Badge>
-                    )}
+  {mattress.specs.trialType === 'refund' && (
+    <Badge className="bg-green-600 text-white border-0 text-xs">
+      Okres testowy z pełnym zwrotem pieniędzy
+    </Badge>
+  )}
 
-                    {parseInt(mattress.specs.warranty) >= 20 && (
-                      <Badge className="bg-blue-600 text-white border-0 text-xs">
-                        X lat gwarancji
-                      </Badge>
-                    )}
-                  </div>
+  {mattress.specs.trialType === 'exchange' && (
+    <Badge className="bg-amber-600 text-white border-0 text-xs">
+      Okres testowy tylko z wymianą materaca
+    </Badge>
+  )}
+</div>
 
                   <p className="text-3xl font-bold text-primary">
                     {mattress.price} zł
