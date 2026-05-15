@@ -33,7 +33,7 @@ export function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Brand */}
         <div className="sm:col-span-2 lg:col-span-1">
-  <Link href="/" className="flex items-center gap-2 mb-4">
+  <Link href="/" className="flex items-center gap-2 mb-4 -ml-2">
 
     <div className="w-[220px] h-[55px] relative">
       <Image
