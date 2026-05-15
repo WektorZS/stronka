@@ -30,107 +30,119 @@ export function Footer() {
   return (
     <footer className="bg-card border-t border-border mt-auto">
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-x-10 gap-y-8">
-          {/* Brand */}
-        <div className="sm:col-span-2 lg:col-span-1 flex flex-col items-start justify-start">
-  <Link href="/" className="flex items-center gap-2 mb-4">
 
-    <div className="w-[220px] h-[55px] relative">
-      <Image
-        src="/logo.png"
-        alt="Ranking Materaców"
-        fill
-        className="object-contain"
-      />
-    </div>
+        {/* MAIN LAYOUT */}
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
 
-  </Link>
+          {/* LEFT SIDE - BRAND */}
+          <div className="lg:w-1/4 flex flex-col items-start">
 
-  <p className="text-sm text-muted-foreground leading-relaxed">
-    Portal poświęcony porównaniom materaców dostępnych na polskim rynku. 
-    Pomagamy wybrać najlepszy materac dopasowany do Twoich potrzeb.
-  </p>
-</div>
+            <Link href="/" className="mb-4">
+              <div className="w-[200px] h-[55px] relative">
+                <Image
+                  src="/logo.png"
+                  alt="Ranking Materaców"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            </Link>
 
-          {/* Ranking */}
-          <div>
-            <h3 className="font-semibold text-foreground mb-4">Ranking</h3>
-            <ul className="space-y-3">
-              {footerLinks.ranking.map((link) => (
-                <li key={link.name}>
-                  <Link 
-                    href={link.href}
-                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Portal poświęcony porównaniom materaców dostępnych na polskim rynku.
+              Pomagamy wybrać najlepszy materac dopasowany do Twoich potrzeb.
+            </p>
           </div>
 
-          {/* Recenzje */}
-          <div>
-            <h3 className="font-semibold text-foreground mb-4">Recenzje</h3>
-            <ul className="space-y-3">
-              {footerLinks.recenzje.map((link) => (
-                <li key={link.name}>
-                  <Link 
-                    href={link.href}
-                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+          {/* RIGHT SIDE - LINKS */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-10 flex-1">
 
-          {/* Blog */}
-          <div>
-            <h3 className="font-semibold text-foreground mb-4">Blog</h3>
-            <ul className="space-y-3">
-              {footerLinks.blog.map((link) => (
-                <li key={link.name}>
-                  <Link 
-                    href={link.href}
-                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+            {/* Ranking */}
+            <div>
+              <h3 className="font-semibold text-foreground mb-4">Ranking</h3>
+              <ul className="space-y-3">
+                {footerLinks.ranking.map((link) => (
+                  <li key={link.name}>
+                    <Link
+                      href={link.href}
+                      className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                    >
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
 
-          {/* Informacje */}
-          <div>
-            <h3 className="font-semibold text-foreground mb-4">Informacje</h3>
-            <ul className="space-y-3">
-              {footerLinks.informacje.map((link) => (
-                <li key={link.name}>
-                  <Link 
-                    href={link.href}
-                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            {/* Recenzje */}
+            <div>
+              <h3 className="font-semibold text-foreground mb-4">Recenzje</h3>
+              <ul className="space-y-3">
+                {footerLinks.recenzje.map((link) => (
+                  <li key={link.name}>
+                    <Link
+                      href={link.href}
+                      className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                    >
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Blog */}
+            <div>
+              <h3 className="font-semibold text-foreground mb-4">Blog</h3>
+              <ul className="space-y-3">
+                {footerLinks.blog.map((link) => (
+                  <li key={link.name}>
+                    <Link
+                      href={link.href}
+                      className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                    >
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Informacje */}
+            <div>
+              <h3 className="font-semibold text-foreground mb-4">Informacje</h3>
+              <ul className="space-y-3">
+                {footerLinks.informacje.map((link) => (
+                  <li key={link.name}>
+                    <Link
+                      href={link.href}
+                      className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                    >
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
           </div>
         </div>
 
+        {/* BOTTOM BAR */}
         <div className="mt-12 pt-8 border-t border-border">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
+
             <p className="text-sm text-muted-foreground">
-              © 2026 Ranking-Materacow.pl . Wszelkie prawa zastrzeżone.
+              © 2026 Ranking-Materacow.pl. Wszelkie prawa zastrzeżone.
             </p>
+
             <p className="text-xs text-muted-foreground">
               Ostatnia aktualizacja rankingu: Maj 2026
             </p>
+
           </div>
         </div>
+
       </div>
     </footer>
   )
