@@ -46,7 +46,6 @@ const navigation = [
       { name: 'Kalkulator budżetu', href: '/kalkulator' },
     ],
   },
-  { name: 'Blog', href: '/artykuly' },
   {
     name: 'O nas',
     href: '/o-nas',
@@ -56,6 +55,7 @@ const navigation = [
       { name: 'FAQ', href: '/faq' },
     ],
   },
+  { name: 'Blog', href: '/artykuly' },
 ]
 
 export function Header() {
