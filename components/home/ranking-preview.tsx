@@ -5,6 +5,7 @@ import {
   Star,
   ExternalLink,
   Check,
+  WashingMachine,
   X,
 } from 'lucide-react'
 
@@ -118,11 +119,27 @@ export function RankingPreview() {
     </Badge>
   )}
 
+    {mattress.specs.trialType === 'none' && (
+    <Badge className="bg-red-600 text-white border-0 text-xs">
+      Brak okresu testowego
+    </Badge>
+  )}
+
   {mattress.specs.trialType === 'exchange' && (
     <Badge className="bg-amber-600 text-white border-0 text-xs">
       Okres testowy tylko z wymianą materaca
     </Badge>
   )}
+</div>
+
+<div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
+  <WashingMachine className="w-4 h-4 shrink-0" />
+  <span>
+    Pokrowiec można prać w{' '}
+    <span className="font-medium text-foreground">
+      {mattress.specs.washTemp}°C
+    </span>
+  </span>
 </div>
 
                   <p className="text-3xl font-bold text-primary">
