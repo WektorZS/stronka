@@ -35,7 +35,7 @@ export function Footer() {
         <div className="sm:col-span-2 lg:col-span-1">
   <Link href="/" className="flex items-center gap-2 mb-4">
 
-    <div className="w-[220px] h-[65px] relative">
+    <div className="w-[220px] h-[55px] relative">
       <Image
         src="/logo.png"
         alt="Ranking Materaców"
