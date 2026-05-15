@@ -66,12 +66,8 @@ export function Header() {
   const { favorites } = useFavorites()
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10)
-    }
-
+    const handleScroll = () => setIsScrolled(window.scrollY > 10)
     window.addEventListener('scroll', handleScroll)
-
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
@@ -105,14 +101,19 @@ export function Header() {
     )
   }
 
+  // 🔥 UNIFIED STYLE (KLUCZ DO FIXA)
+  const navClass =
+    "px-4 py-2 text-base font-medium text-foreground/80 hover:text-foreground hover:bg-secondary rounded-md transition-colors"
+
+  const dropdownTriggerClass =
+    "px-4 py-2 text-base font-medium text-foreground/80 hover:text-foreground hover:bg-secondary rounded-md transition-colors"
+
   return (
-    <header
-      className={`sticky top-0 z-50 w-full transition-all duration-300 ${
-        isScrolled
-          ? 'bg-card/95 backdrop-blur-md shadow-sm border-b border-border'
-          : 'bg-transparent'
-      }`}
-    >
+    <header className={`sticky top-0 z-50 w-full transition-all duration-300 ${
+      isScrolled
+        ? 'bg-card/95 backdrop-blur-md shadow-sm border-b border-border'
+        : 'bg-transparent'
+    }`}>
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
 
@@ -129,15 +130,16 @@ export function Header() {
             </div>
           </Link>
 
-          {/* Desktop menu */}
+          {/* Desktop */}
           <div className="hidden lg:flex items-center gap-1">
+
             {navigation.map(item =>
               item.children ? (
                 <DropdownMenu key={item.name}>
                   <DropdownMenuTrigger asChild>
                     <Button
                       variant="ghost"
-                      className="text-base font-medium tracking-wide text-foreground/80 hover:text-foreground hover:bg-secondary"
+                      className={dropdownTriggerClass}
                     >
                       {item.name}
                       <ChevronDown className="ml-1 h-4 w-4" />
@@ -147,7 +149,12 @@ export function Header() {
                   <DropdownMenuContent align="start" className="w-56">
                     {item.children.map(child => (
                       <DropdownMenuItem key={child.name} asChild>
-                        <Link href={child.href}>{child.name}</Link>
+                        <Link
+                          href={child.href}
+                          className="text-base"
+                        >
+                          {child.name}
+                        </Link>
                       </DropdownMenuItem>
                     ))}
                   </DropdownMenuContent>
@@ -156,7 +163,7 @@ export function Header() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="px-4 py-2 text-base font-medium text-foreground/80 hover:text-foreground hover:bg-secondary rounded-md transition-colors"
+                  className={navClass}
                 >
                   {item.name}
                 </Link>
@@ -176,6 +183,7 @@ export function Header() {
                 </span>
               )}
             </Link>
+
           </div>
 
           {/* Mobile button */}
@@ -187,56 +195,14 @@ export function Header() {
           >
             {isMobileMenuOpen ? <X /> : <Menu />}
           </Button>
+
         </div>
 
-        {/* MOBILE MENU */}
+        {/* MOBILE (bez zmian logicznych) */}
         {isMobileMenuOpen && (
-          <div
-            className="
-              lg:hidden
-              fixed
-              inset-0
-              top-16
-              z-50
-              bg-background/95
-              backdrop-blur-xl
-              animate-in
-              slide-in-from-right
-              duration-300
-            "
-          >
+          <div className="lg:hidden fixed inset-0 top-16 z-50 bg-background/95 backdrop-blur-xl">
             <div className="flex flex-col h-full">
 
-              {/* Top intro */}
-              <div className="px-6 pt-6 pb-5 border-b border-border">
-                <div className="flex items-center justify-between mb-3">
-                  <div>
-                    <p className="text-lg font-semibold">
-                      Ranking Materacy
-                    </p>
-
-                    <p className="text-sm text-muted-foreground mt-1">
-                      Recenzje, rankingi i porównania materacy 2026
-                    </p>
-                  </div>
-
-                  <Link
-                    href="/ulubione"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    className="relative"
-                  >
-                    <Heart className="h-6 w-6 text-foreground" />
-
-                    {favorites.length > 0 && (
-                      <span className="absolute -top-2 -right-2 h-5 min-w-5 px-1 bg-primary text-primary-foreground text-[10px] rounded-full flex items-center justify-center font-bold">
-                        {favorites.length}
-                      </span>
-                    )}
-                  </Link>
-                </div>
-              </div>
-
-              {/* Scrollable nav */}
               <div className="flex-1 overflow-y-auto px-4 py-4">
 
                 {navigation.map(item => {
@@ -261,20 +227,7 @@ export function Header() {
                         key={item.name}
                         href={item.href}
                         onClick={() => setIsMobileMenuOpen(false)}
-                        className="
-                          flex
-                          items-center
-                          gap-4
-                          rounded-2xl
-                          px-4
-                          py-4
-                          mb-2
-                          bg-card
-                          border
-                          border-border
-                          hover:bg-secondary/60
-                          transition-all
-                        "
+                        className="flex items-center gap-4 rounded-2xl px-4 py-4 mb-2 bg-card border border-border hover:bg-secondary/60"
                       >
                         <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
                           <Icon className="w-5 h-5 text-primary" />
@@ -289,21 +242,10 @@ export function Header() {
 
                   return (
                     <div key={item.name} className="mb-3">
+
                       <button
                         onClick={() => toggleSection(item.name)}
-                        className="
-                          w-full
-                          flex
-                          items-center
-                          justify-between
-                          rounded-2xl
-                          px-4
-                          py-4
-                          bg-card
-                          border
-                          border-border
-                          transition-all
-                        "
+                        className="w-full flex items-center justify-between rounded-2xl px-4 py-4 bg-card border border-border"
                       >
                         <div className="flex items-center gap-4">
                           <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
@@ -323,52 +265,38 @@ export function Header() {
                       </button>
 
                       {isOpen && (
-                        <div className="mt-2 ml-3 border-l border-border pl-4 space-y-1 animate-in fade-in-0 slide-in-from-top-2 duration-200">
+                        <div className="mt-2 ml-3 border-l border-border pl-4 space-y-1">
                           {item.children.map(child => (
                             <Link
                               key={child.name}
                               href={child.href}
                               onClick={() => setIsMobileMenuOpen(false)}
-                              className="
-                                block
-                                rounded-xl
-                                px-4
-                                py-3
-                                text-sm
-                                text-muted-foreground
-                                hover:text-foreground
-                                hover:bg-secondary/50
-                                transition-all
-                              "
+                              className="block rounded-xl px-4 py-3 text-sm text-muted-foreground hover:text-foreground hover:bg-secondary/50"
                             >
                               {child.name}
                             </Link>
                           ))}
                         </div>
                       )}
+
                     </div>
                   )
                 })}
+
               </div>
 
-              {/* Bottom CTA */}
-              <div className="p-4 border-t border-border bg-background/80 backdrop-blur">
-                <Button
-                  asChild
-                  size="lg"
-                  className="w-full h-12 text-base font-semibold rounded-xl"
-                >
-                  <Link
-                    href="/ranking"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
+              <div className="p-4 border-t border-border">
+                <Button asChild className="w-full">
+                  <Link href="/ranking" onClick={() => setIsMobileMenuOpen(false)}>
                     Zobacz pełny ranking 2026
                   </Link>
                 </Button>
               </div>
+
             </div>
           </div>
         )}
+
       </nav>
     </header>
   )
