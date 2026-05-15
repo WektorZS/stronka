@@ -242,7 +242,7 @@ export function RankingTable({ mattresses }: RankingTableProps) {
                           {isSelected
                             ? 'Usu\u0144 z por\u00F3wnania'
                             : selectedForCompare.length >= MAX_COMPARE
-                              ? 'Limit 3 matracy osi\u0105gni\u0119ty'
+                              ? 'Limit 3 materaców osi\u0105gni\u0119ty'
                               : 'Dodaj do por\u00F3wnania'}
                         </TooltipContent>
                       </Tooltip>
@@ -371,7 +371,7 @@ export function RankingTable({ mattresses }: RankingTableProps) {
                           <div>
                             <p className="text-xs font-medium text-green-600 mb-2">ZALETY</p>
                             <ul className="space-y-1">
-                              {mattress.pros.slice(0, 3).map((pro, i) => (
+                              {mattress.pros.slice(0, 5).map((pro, i) => (
                                 <li key={i} className="text-sm text-muted-foreground flex items-start gap-2">
                                   <Check className="w-4 h-4 text-green-600 shrink-0 mt-0.5" />
                                   {pro}
@@ -382,7 +382,7 @@ export function RankingTable({ mattresses }: RankingTableProps) {
                           <div>
                             <p className="text-xs font-medium text-red-600 mb-2">WADY</p>
                             <ul className="space-y-1">
-                              {mattress.cons.slice(0, 2).map((con, i) => (
+                              {mattress.cons.slice(0, 5).map((con, i) => (
                                 <li key={i} className="text-sm text-muted-foreground flex items-start gap-2">
                                   <X className="w-4 h-4 text-red-600 shrink-0 mt-0.5" />
                                   {con}
