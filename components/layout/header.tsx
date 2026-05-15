@@ -156,7 +156,7 @@ export function Header() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="px-4 py-2 text-sm font-medium text-foreground/80 hover:text-foreground hover:bg-secondary rounded-md transition-colors"
+                  className="px-4 py-2 text-base font-medium text-foreground/80 hover:text-foreground hover:bg-secondary rounded-md transition-colors"
                 >
                   {item.name}
                 </Link>
