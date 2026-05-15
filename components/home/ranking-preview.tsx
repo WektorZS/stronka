@@ -114,13 +114,13 @@ export function RankingPreview() {
 
                     {mattress.specs.trialType === 'refund' && (
                       <Badge className="bg-green-600 text-white border-0 text-xs">
-                        Zwrot pieniędzy
+                        Pełny zwrot pieniędzy
                       </Badge>
                     )}
 
                     {parseInt(mattress.specs.warranty) >= 20 && (
                       <Badge className="bg-blue-600 text-white border-0 text-xs">
-                        25 lat gwarancji
+                        X lat gwarancji
                       </Badge>
                     )}
                   </div>
