@@ -125,7 +125,7 @@ Darmowa dostawa i 10-letnia gwarancja dopełniają obrazu produktu, który oferu
       '15 lat gwarancji',
       'Pokrowiec Cashmere z dodatkiem kaszmiru',
       'Renomowana polska marka',
-      'Darmowa dostawa,
+      'Darmowa dostawa',
     ],
     cons: [
       'Brak informacji o gęstości pianek',
