@@ -142,7 +142,7 @@ export function Header() {
                       className={dropdownTriggerClass}
                     >
                       {item.name}
-                      <ChevronDown className="ml-0.5 h-4 w-4" />
+                      <ChevronDown className="ml-0.2 h-4 w-4" />
                     </Button>
                   </DropdownMenuTrigger>
 
