@@ -44,7 +44,7 @@ export default function HomePage() {
               <span className="text-primary">idealny dla siebie</span>
             </h1>
             <p className="text-lg sm:text-xl text-muted-foreground mb-8 max-w-xl animate-fade-in stagger-2 text-pretty leading-relaxed">
-              Przetestowaliśmy 10 materacy dostępnych na polskim rynku. Szczegółowe recenzje,
+              Przetestowaliśmy 10 materaców dostępnych na polskim rynku. Szczegółowe recenzje,
               oceny i porównanie w 6 kryteriach.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in stagger-3">
@@ -56,7 +56,7 @@ export default function HomePage() {
               </Button>
               <Button asChild variant="outline" size="lg" className="text-base bg-background/80 backdrop-blur-sm">
                 <Link href="/quiz">
-                  Dobierz materac do siebie
+                  Dobierz materac pod siebie
                 </Link>
               </Button>
             </div>
@@ -101,7 +101,7 @@ export default function HomePage() {
                 <Search className="w-6 h-6 text-primary" />
               </div>
               <span className="text-3xl font-bold text-foreground">10</span>
-              <span className="text-sm text-muted-foreground mt-1">Porównywanych materaców</span>
+              <span className="text-sm text-muted-foreground mt-1">Materaców w rankingu</span>
             </div>
             <div className="flex flex-col items-center text-center p-4">
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-3">
@@ -114,7 +114,7 @@ export default function HomePage() {
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-3">
                 <Award className="w-6 h-6 text-primary" />
               </div>
-              <span className="text-3xl font-bold text-foreground">349–3430</span>
+              <span className="text-3xl font-bold text-foreground">349–3699</span>
               <span className="text-sm text-muted-foreground mt-1">Zakres cenowy (zł)</span>
             </div>
             <div className="flex flex-col items-center text-center p-4">
@@ -141,7 +141,7 @@ export default function HomePage() {
               Gotowy na lepszy sen?
             </h2>
             <p className="text-lg opacity-90 mb-8 text-pretty max-w-xl mx-auto leading-relaxed">
-              Sprawdź pełny ranking materacy i znajdź model idealnie dopasowany do Twoich potrzeb.
+              Sprawdź pełny ranking materaców i znajdź model idealnie dopasowany do Twoich potrzeb.
               Każda recenzja zawiera szczegółową analizę zalet i wad.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
