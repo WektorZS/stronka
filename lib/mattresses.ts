@@ -125,7 +125,7 @@ Darmowa dostawa i 10-letnia gwarancja dopełniają obrazu produktu, który oferu
       '15 lat gwarancji',
       'Pokrowiec Cashmere z dodatkiem kaszmiru',
       'Renomowana polska marka',
-      'Darmowa dostawa u pośredników',
+      'Darmowa dostawa,
     ],
     cons: [
       'Brak informacji o gęstości pianek',
@@ -339,8 +339,9 @@ Darmowa dostawa to plus. Cena 1399 zł plasuje ten materac w średnim segmencie 
     },
     pros: [
       'Podwyższona gęstość pianek (BUBBLE 45 kg/m³, HR 44 kg/m³)',
-      'Polski producent',
+      'Polska produkcja',
       'Pokrowiec z jonami srebra (2%)',
+      'Darmowa dostawa',
     ],
     cons: [
       'Tylko podstawowa gwarancja 24 miesiące',
