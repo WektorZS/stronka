@@ -80,7 +80,19 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Trust Indicators */}
+ {/* Ranking Preview */}
+      <RankingPreview />
+
+
+      {/* Tools Section */}
+      <ToolsSection />
+
+    
+
+      {/* Methodology Preview */}
+      <MethodologyPreview />
+
+            {/* Trust Indicators */}
       <section className="py-12 bg-card border-y border-border">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
@@ -115,15 +127,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* Tools Section */}
-      <ToolsSection />
-
-      {/* Ranking Preview */}
-      <RankingPreview />
-
-      {/* Methodology Preview */}
-      <MethodologyPreview />
 
       {/* Latest Articles */}
       <LatestArticles />
