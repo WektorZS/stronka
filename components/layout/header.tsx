@@ -118,7 +118,7 @@ export function Header() {
 
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-[220px] h-[50px] relative">
+            <div className="w-[130px] h-[50px] relative">
               <Image
                 src="/logo.png"
                 alt="Ranking Materaców"
