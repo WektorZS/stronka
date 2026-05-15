@@ -3,7 +3,18 @@
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
-import { Menu, X, ChevronDown, Heart } from 'lucide-react'
+import {
+  Menu,
+  X,
+  ChevronDown,
+  Heart,
+  Trophy,
+  FileText,
+  Wrench,
+  BookOpen,
+  Info,
+} from 'lucide-react'
+
 import { useFavorites } from '@/lib/favorites'
 import { Button } from '@/components/ui/button'
 import {
@@ -24,7 +35,7 @@ const navigation = [
       { name: 'Hilding Conga', href: '/recenzje/hilding-conga' },
       { name: 'JYSK WELLPUR KVITA', href: '/recenzje/jysk-wellpur-kvita' },
       { name: 'TEMPUR EASE 20', href: '/recenzje/tempur-ease-20' },
-    ]
+    ],
   },
   {
     name: 'Narzędzia',
@@ -33,7 +44,7 @@ const navigation = [
       { name: 'Quiz - dobierz materac', href: '/quiz' },
       { name: 'Porównywarka', href: '/porownaj' },
       { name: 'Kalkulator budżetu', href: '/kalkulator' },
-    ]
+    ],
   },
   { name: 'Blog', href: '/artykuly' },
   {
@@ -43,49 +54,62 @@ const navigation = [
       { name: 'O nas', href: '/o-nas' },
       { name: 'Metodologia', href: '/metodologia' },
       { name: 'FAQ', href: '/faq' },
-    ]
+    ],
   },
 ]
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [openSections, setOpenSections] = useState<string[]>([])
+
   const { favorites } = useFavorites()
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10)
     }
+
     window.addEventListener('scroll', handleScroll)
+
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-useEffect(() => {
-  if (isMobileMenuOpen) {
-    document.body.style.position = 'fixed'
-    document.body.style.top = `-${window.scrollY}px`
-    document.body.style.width = '100%'
-  } else {
-    const scrollY = document.body.style.top
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.position = 'fixed'
+      document.body.style.top = `-${window.scrollY}px`
+      document.body.style.width = '100%'
+    } else {
+      const scrollY = document.body.style.top
 
-    document.body.style.position = ''
-    document.body.style.top = ''
-    document.body.style.width = ''
+      document.body.style.position = ''
+      document.body.style.top = ''
+      document.body.style.width = ''
 
-    window.scrollTo(0, parseInt(scrollY || '0') * -1)
+      window.scrollTo(0, parseInt(scrollY || '0') * -1)
+    }
+
+    return () => {
+      document.body.style.position = ''
+      document.body.style.top = ''
+      document.body.style.width = ''
+    }
+  }, [isMobileMenuOpen])
+
+  const toggleSection = (name: string) => {
+    setOpenSections(prev =>
+      prev.includes(name)
+        ? prev.filter(i => i !== name)
+        : [...prev, name]
+    )
   }
 
-  return () => {
-    document.body.style.position = ''
-    document.body.style.top = ''
-    document.body.style.width = ''
-  }
-}, [isMobileMenuOpen])
   return (
-    <header 
+    <header
       className={`sticky top-0 z-50 w-full transition-all duration-300 ${
-        isScrolled 
-          ? 'bg-card/95 backdrop-blur-md shadow-sm border-b border-border' 
+        isScrolled
+          ? 'bg-card/95 backdrop-blur-md shadow-sm border-b border-border'
           : 'bg-transparent'
       }`}
     >
@@ -93,31 +117,35 @@ useEffect(() => {
         <div className="flex h-16 items-center justify-between">
 
           {/* Logo */}
-<Link href="/" className="flex items-center gap-2 group">
-<div className="w-[220px] h-[65px] relative">
-  <Image
-    src="/logo.png"
-    alt="Ranking Materaców"
-    fill
-    className="object-contain"
-  />
-</div>
-</Link>
+          <Link href="/" className="flex items-center gap-2 group">
+            <div className="w-[220px] h-[65px] relative">
+              <Image
+                src="/logo.png"
+                alt="Ranking Materaców"
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
+          </Link>
 
-          {/* Desktop */}
+          {/* Desktop menu */}
           <div className="hidden lg:flex items-center gap-1">
-            {navigation.map((item) => (
+            {navigation.map(item =>
               item.children ? (
                 <DropdownMenu key={item.name}>
                   <DropdownMenuTrigger asChild>
-                    <Button variant="ghost" className="text-foreground/80 hover:text-foreground hover:bg-secondary">
+                    <Button
+                      variant="ghost"
+                      className="text-foreground/80 hover:text-foreground hover:bg-secondary"
+                    >
                       {item.name}
                       <ChevronDown className="ml-1 h-4 w-4" />
                     </Button>
                   </DropdownMenuTrigger>
 
                   <DropdownMenuContent align="start" className="w-56">
-                    {item.children.map((child) => (
+                    {item.children.map(child => (
                       <DropdownMenuItem key={child.name} asChild>
                         <Link href={child.href}>{child.name}</Link>
                       </DropdownMenuItem>
@@ -133,14 +161,15 @@ useEffect(() => {
                   {item.name}
                 </Link>
               )
-            ))}
+            )}
 
             {/* Favorites */}
             <Link
               href="/ulubione"
-              className="relative p-2 text-foreground/80 hover:text-foreground hover:bg-secondary rounded-md ml-2"
+              className="relative p-2 text-foreground/80 hover:text-foreground hover:bg-secondary rounded-md ml-2 transition-colors"
             >
               <Heart className="h-5 w-5" />
+
               {favorites.length > 0 && (
                 <span className="absolute -top-1 -right-1 h-5 w-5 bg-primary text-primary-foreground text-xs font-bold rounded-full flex items-center justify-center">
                   {favorites.length}
@@ -163,76 +192,180 @@ useEffect(() => {
         {/* MOBILE MENU */}
         {isMobileMenuOpen && (
           <div
-  className="
-    lg:hidden
-    fixed
-    inset-x-0
-    top-16
-    z-50
-    bg-card/95
-    backdrop-blur-md
-    border-t
-    border-border
-    h-[calc(100dvh-4rem)]
-    overflow-y-auto
-    overscroll-y-contain
-  "
-  style={{ WebkitOverflowScrolling: 'touch' }}
->
-            <div className="px-4 py-2 flex flex-col">
+            className="
+              lg:hidden
+              fixed
+              inset-0
+              top-16
+              z-50
+              bg-background/95
+              backdrop-blur-xl
+              animate-in
+              slide-in-from-right
+              duration-300
+            "
+          >
+            <div className="flex flex-col h-full">
 
-              {navigation.map((item) => (
-                item.children ? (
-                  <div
-  key={item.name}
-  className="py-2 border-b border-border/60"
->
-                    <div className="px-4 text-sm font-medium text-muted-foreground">
-                      {item.name}
-                    </div>
+              {/* Top intro */}
+              <div className="px-6 pt-6 pb-5 border-b border-border">
+                <div className="flex items-center justify-between mb-3">
+                  <div>
+                    <p className="text-lg font-semibold">
+                      Ranking Materacy
+                    </p>
 
-                    <div className="ml-4 mt-2 flex flex-col gap-1">
-                      {item.children.map((child) => (
-                        <Link
-                          key={child.name}
-                          href={child.href}
-                          onClick={() => setIsMobileMenuOpen(false)}
-                          className="
-  px-4
-  py-2
-  text-sm
-  hover:bg-secondary
-  transition-colors
-  border-b
-  border-border/40
-"
-                        >
-                          {child.name}
-                        </Link>
-                      ))}
-                    </div>
+                    <p className="text-sm text-muted-foreground mt-1">
+                      Recenzje, rankingi i porównania materacy 2026
+                    </p>
                   </div>
-                ) : (
-                  <Link
-                    key={item.name}
-                    href={item.href}
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    className="
-  px-4
-  py-3
-  text-base
-  font-medium
-  hover:bg-secondary
-  transition-colors
-  border-b
-  border-border/60
-"
-                  >
-                    {item.name}
-                  </Link>
-                )
-              ))}
 
+                  <Link
+                    href="/ulubione"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="relative"
+                  >
+                    <Heart className="h-6 w-6 text-foreground" />
+
+                    {favorites.length > 0 && (
+                      <span className="absolute -top-2 -right-2 h-5 min-w-5 px-1 bg-primary text-primary-foreground text-[10px] rounded-full flex items-center justify-center font-bold">
+                        {favorites.length}
+                      </span>
+                    )}
+                  </Link>
+                </div>
+              </div>
+
+              {/* Scrollable nav */}
+              <div className="flex-1 overflow-y-auto px-4 py-4">
+
+                {navigation.map(item => {
+                  const isOpen = openSections.includes(item.name)
+
+                  const icon =
+                    item.name.includes('Ranking')
+                      ? Trophy
+                      : item.name.includes('Recenzje')
+                        ? FileText
+                        : item.name.includes('Narzędzia')
+                          ? Wrench
+                          : item.name.includes('Blog')
+                            ? BookOpen
+                            : Info
+
+                  const Icon = icon
+
+                  if (!item.children) {
+                    return (
+                      <Link
+                        key={item.name}
+                        href={item.href}
+                        onClick={() => setIsMobileMenuOpen(false)}
+                        className="
+                          flex
+                          items-center
+                          gap-4
+                          rounded-2xl
+                          px-4
+                          py-4
+                          mb-2
+                          bg-card
+                          border
+                          border-border
+                          hover:bg-secondary/60
+                          transition-all
+                        "
+                      >
+                        <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+                          <Icon className="w-5 h-5 text-primary" />
+                        </div>
+
+                        <span className="font-medium text-base">
+                          {item.name}
+                        </span>
+                      </Link>
+                    )
+                  }
+
+                  return (
+                    <div key={item.name} className="mb-3">
+                      <button
+                        onClick={() => toggleSection(item.name)}
+                        className="
+                          w-full
+                          flex
+                          items-center
+                          justify-between
+                          rounded-2xl
+                          px-4
+                          py-4
+                          bg-card
+                          border
+                          border-border
+                          transition-all
+                        "
+                      >
+                        <div className="flex items-center gap-4">
+                          <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+                            <Icon className="w-5 h-5 text-primary" />
+                          </div>
+
+                          <span className="font-medium text-base">
+                            {item.name}
+                          </span>
+                        </div>
+
+                        <ChevronDown
+                          className={`h-5 w-5 transition-transform ${
+                            isOpen ? 'rotate-180' : ''
+                          }`}
+                        />
+                      </button>
+
+                      {isOpen && (
+                        <div className="mt-2 ml-3 border-l border-border pl-4 space-y-1 animate-in fade-in-0 slide-in-from-top-2 duration-200">
+                          {item.children.map(child => (
+                            <Link
+                              key={child.name}
+                              href={child.href}
+                              onClick={() => setIsMobileMenuOpen(false)}
+                              className="
+                                block
+                                rounded-xl
+                                px-4
+                                py-3
+                                text-sm
+                                text-muted-foreground
+                                hover:text-foreground
+                                hover:bg-secondary/50
+                                transition-all
+                              "
+                            >
+                              {child.name}
+                            </Link>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  )
+                })}
+              </div>
+
+              {/* Bottom CTA */}
+              <div className="p-4 border-t border-border bg-background/80 backdrop-blur">
+                <Button
+                  asChild
+                  size="lg"
+                  className="w-full h-12 text-base font-semibold rounded-xl"
+                >
+                  <Link
+                    href="/ranking"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Zobacz pełny ranking 2026
+                  </Link>
+                </Button>
+              </div>
             </div>
           </div>
         )}

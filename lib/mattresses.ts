@@ -77,8 +77,8 @@ export const mattresses: Mattress[] = [
       'Bardzo dobry stosunek jakości do ceny',
     ],
     cons: [
-      'Ograniczony asortyment (dla niektórych może być to minus)',
       'Dostawa z Niemiec może trwać odrobinę dłużej niż lokalnie z Polski',
+      'Ograniczony asortyment do 2-3 materaców (dla niektórych może być to minusem)',
     ],
     verdict: 'Najlepszy wybór w kategorii cena/jakość, ponad 5 mln sprzedanych egzemplarzy. Jedyny materac w teście oferujący pełny zwrot pieniędzy.',
     fullReview: `Materac Bett1 Bodyguard to produkt, który wyróżnia się na tle konkurencji przede wszystkim najbardziej elastyczną opcją zwrotów, solidną gęstością pianek i rozsądną ceną. Jako jedyny w naszym teście oferuje pełny zwrot pieniędzy w ciągu 100 dni, bez żadnych dodatkowych warunków czy opłat.
