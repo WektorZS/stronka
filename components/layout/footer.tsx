@@ -29,11 +29,11 @@ const footerLinks = {
 export function Footer() {
   return (
     <footer className="bg-card border-t border-border mt-auto">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-x-10 gap-y-8">
           {/* Brand */}
-        <div className="sm:col-span-2 lg:col-span-1 flex flex-col items-start">
-  <Link href="/" className="flex items-center gap-2 mb-4 -ml-2">
+        <div className="sm:col-span-2 lg:col-span-1 flex flex-col items-start justify-start">
+  <Link href="/" className="flex items-center gap-2 mb-4">
 
     <div className="w-[220px] h-[55px] relative">
       <Image
