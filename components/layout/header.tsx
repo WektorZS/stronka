@@ -25,7 +25,14 @@ import {
 } from '@/components/ui/dropdown-menu'
 
 const navigation = [
-  { name: '🏆 Ranking 2026', href: '/ranking' },
+  {
+    name: 'Rankingi',
+    href: '/ranking',
+    children: [
+      { name: 'Ranking materaców 2026', href: '/ranking' },
+      { name: 'Ranking prześcieradeł 2026', href: '/ranking-przescieradeł' },
+    ],
+  },
   {
     name: 'Recenzje',
     href: '/recenzje',
@@ -209,7 +216,7 @@ export function Header() {
                   const isOpen = openSections.includes(item.name)
 
                   const icon =
-                    item.name.includes('Ranking')
+                    item.name.includes('Rankingi') || item.name.includes('Ranking')
                       ? Trophy
                       : item.name.includes('Recenzje')
                         ? FileText

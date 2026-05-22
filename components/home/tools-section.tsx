@@ -1,24 +1,32 @@
 import Link from 'next/link'
-import { Sparkles, Scale, Calculator, ArrowRight } from 'lucide-react'
+import { Sparkles, Scale, Calculator, ArrowRight, Trophy } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 
 const tools = [
   {
-    title: 'Quiz - znajdź materac',
+    title: 'Ranking materaców 2026',
+    description: 'Pełne porównanie 10 materaców piankowych według 6 kryteriów. Sprawdź, który materac wygrywa.',
+    icon: Trophy,
+    href: '/ranking',
+    color: 'bg-primary/10 text-primary',
+    cta: 'Zobacz ranking',
+  },
+  {
+    title: 'Ranking prześcieradeł 2026',
+    description: 'Top 5 prześcieradeł z gumką: bawełna vs poliester, gramatura, temperatura prania, certyfikaty.',
+    icon: Scale,
+    href: '/ranking-przescieradeł',
+    color: 'bg-emerald-500/10 text-emerald-600',
+    cta: 'Porównaj prześcieradła',
+  },
+  {
+    title: 'Quiz – znajdź materac',
     description: 'Odpowiedz na kilka pytań, a pomożemy Ci wybrać idealny materac dopasowany do Twoich potrzeb.',
     icon: Sparkles,
     href: '/quiz',
     color: 'bg-purple-500/10 text-purple-600',
     cta: 'Rozpocznij quiz',
-  },
-  {
-    title: 'Porównywarka materaców',
-    description: 'Porównaj do 3 materaców obok siebie. Sprawdź różnice w parametrach, ocenach i cenach.',
-    icon: Scale,
-    href: '/porownaj',
-    color: 'bg-blue-500/10 text-blue-600',
-    cta: 'Porównaj materace',
   },
   {
     title: 'Kalkulator budżetu',
@@ -36,14 +44,14 @@ export function ToolsSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Narzędzia pomocne przy wyborze
+            Rankingi i narzędzia
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Skorzystaj z naszych interaktywnych narzędzi, które ułatwią Ci wybór idealnego materaca
+            Sprawdź nasze rankingi i skorzystaj z interaktywnych narzędzi, które ułatwią Ci wybór idealnych produktów do sypialni
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {tools.map((tool) => {
             const Icon = tool.icon
             return (

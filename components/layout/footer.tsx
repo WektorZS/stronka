@@ -4,6 +4,7 @@ import Image from 'next/image'
 const footerLinks = {
   ranking: [
     { name: 'Ranking materaców 2026', href: '/ranking' },
+    { name: 'Ranking prześcieradeł 2026', href: '/ranking-przescieradeł' },
     { name: 'Metodologia testów', href: '/metodologia' },
     { name: 'Kryteria oceny', href: '/metodologia#kryteria' },
   ],
@@ -47,8 +48,7 @@ export function Footer() {
   </Link>
 
   <p className="text-sm text-muted-foreground leading-relaxed">
-    Portal poświęcony porównaniom materaców dostępnych na polskim rynku. 
-    Pomagamy wybrać najlepszy materac dopasowany do Twoich potrzeb.
+    Redakcja testująca produkty do sypialni — materace i pościel. Pomagamy wybrać najlepsze produkty do Twojego łóżka.
   </p>
 </div>
 
