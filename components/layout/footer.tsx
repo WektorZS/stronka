@@ -5,8 +5,9 @@ const footerLinks = {
   ranking: [
     { name: 'Ranking materaców 2026', href: '/ranking' },
     { name: 'Ranking prześcieradeł 2026', href: '/ranking-przescieradel' },
+    { name: 'Porównywarka materaców', href: '/porownaj' },
+    { name: 'Porównywarka prześcieradeł', href: '/porownaj-przescieradel' },
     { name: 'Metodologia testów', href: '/metodologia' },
-    { name: 'Kryteria oceny', href: '/metodologia#kryteria' },
   ],
   recenzje: [
     { name: 'Bett1 Bodyguard', href: '/recenzje/bett1-bodyguard' },

@@ -4,13 +4,14 @@ import Image from 'next/image'
 import { ArrowRight, CheckCircle, Award, Shield, Search, Moon, Star } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { RankingPreview } from '@/components/home/ranking-preview'
+import { SheetsPreview } from '@/components/home/sheets-preview'
 import { MethodologyPreview } from '@/components/home/methodology-preview'
 import { LatestArticles } from '@/components/home/latest-articles'
 import { ToolsSection } from '@/components/home/tools-section'
 
 export const metadata: Metadata = {
-  title: 'Ranking Materaców 2026 | Kompleksowe porównanie materaców',
-  description: 'Kompleksowe testy i porównanie materaców piankowych. Sprawdź ranking najlepszych materaców w Polsce. Kompleksowe recenzje i szczegółowa metodologia.',
+  title: 'Ranking Materaców i Prześcieradeł 2026 | Testy i porównania',
+  description: 'Redakcja testująca produkty do sypialni. Rankingi i recenzje materaców piankowych oraz prześcieradeł jersey. Sprawdź który produkt wygrał nasz test.',
 }
 
 export default function HomePage() {
@@ -40,12 +41,12 @@ export default function HomePage() {
               Ranking zaktualizowany: Maj 2026
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6 animate-fade-in stagger-1 text-balance">
-              Znajdź materac<br />
-              <span className="text-primary">idealny dla siebie</span>
+              Testujemy produkty<br />
+              <span className="text-primary">do Twojej sypialni</span>
             </h1>
             <p className="text-lg sm:text-xl text-muted-foreground mb-8 max-w-xl animate-fade-in stagger-2 text-pretty leading-relaxed">
-              Przetestowaliśmy 10 materaców dostępnych na polskim rynku. Szczegółowe recenzje,
-              oceny i porównanie w 6 kryteriach.
+              Przetestowaliśmy 10 materaców i 5 prześcieradeł dostępnych na polskim rynku.
+              Szczegółowe recenzje, oceny i porównania — bez sponsorowanych treści.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in stagger-3">
               <Button asChild size="lg" className="text-base shadow-lg shadow-primary/25">
@@ -65,11 +66,11 @@ export default function HomePage() {
             <div className="flex flex-wrap gap-6 mt-10 animate-fade-in stagger-4">
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Star className="w-4 h-4 text-primary fill-primary" />
-                <span>10 przetestowanych modeli</span>
+                <span>10 materaców w teście</span>
               </div>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <CheckCircle className="w-4 h-4 text-green-600" />
-                <span>Kompleksowe opinie</span>
+                <span>5 prześcieradeł w teście</span>
               </div>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Shield className="w-4 h-4 text-blue-600" />
@@ -83,6 +84,8 @@ export default function HomePage() {
  {/* Ranking Preview */}
       <RankingPreview />
 
+      {/* Sheets Preview */}
+      <SheetsPreview />
 
       {/* Tools Section */}
       <ToolsSection />
@@ -100,8 +103,8 @@ export default function HomePage() {
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-3">
                 <Search className="w-6 h-6 text-primary" />
               </div>
-              <span className="text-3xl font-bold text-foreground">10</span>
-              <span className="text-sm text-muted-foreground mt-1">Materaców w rankingu</span>
+              <span className="text-3xl font-bold text-foreground">15</span>
+              <span className="text-sm text-muted-foreground mt-1">Produktów w testach</span>
             </div>
             <div className="flex flex-col items-center text-center p-4">
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-3">

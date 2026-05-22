@@ -49,7 +49,8 @@ const navigation = [
     href: '/quiz',
     children: [
       { name: 'Quiz - dobierz materac', href: '/quiz' },
-      { name: 'Porównywarka', href: '/porownaj' },
+      { name: 'Porównywarka materaców', href: '/porownaj' },
+      { name: 'Porównywarka prześcieradeł', href: '/porownaj-przescieradel' },
       { name: 'Kalkulator budżetu', href: '/kalkulator' },
     ],
   },
