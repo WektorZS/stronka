@@ -22,23 +22,27 @@ const merriweather = Merriweather({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Ranking Materaców 2026 | Kompleksowe porównanie materaców',
+    default: 'Ranking Materaców i Pościeli 2026 | Testy i porównania',
     template: '%s | Ranking-Materacow.pl 2026',
   },
 
   description:
-    'Kompleksowe testy i porównania materaców piankowych. Sprawdź ranking najlepszych materaców w Polsce, recenzje oraz szczegółową metodologię ocen.',
+    'Redakcja testująca produkty do sypialni — materace, prześcieradła i pościel. Sprawdź rankingi, recenzje i porównania najlepszych produktów na polskim rynku.',
 
   keywords: [
     'materace',
     'test materacy',
     'ranking materacy',
+    'ranking prześcieradeł',
     'test materaców',
     'ranking materaców',
     'materac piankowy',
+    'prześcieradło jersey z gumką',
+    'prześcieradło bawełna',
     'porównanie materacy',
     'porównanie materaców',
     'najlepszy materac',
+    'najlepsze prześcieradło',
     'najlepszy materac 2026',
   ],
 
@@ -68,10 +72,10 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: 'Ranking Materaców 2026 | Kompleksowe porównanie materaców',
+    title: 'Ranking Materaców i Pościeli 2026 | Testy i porównania',
 
     description:
-      'Kompleksowe testy i porównania materaców piankowych. Sprawdź ranking najlepszych materaców w Polsce.',
+      'Redakcja testująca produkty do sypialni — materace, prześcieradła i pościel. Sprawdź rankingi najlepszych produktów w Polsce.',
 
     url: 'https://ranking-materacow.pl',
 
