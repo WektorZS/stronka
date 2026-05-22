@@ -21,13 +21,13 @@ export const metadata: Metadata = {
     'bett1 bodyguard prześcieradło',
   ],
   alternates: {
-    canonical: '/ranking-przescieradeł',
+    canonical: '/ranking-przescieradel',
   },
   openGraph: {
     title: 'Ranking prześcieradeł 2026 – Top 5 | Bawełna vs Poliester',
     description:
       'Porównanie 5 prześcieradeł z gumką 90x200: gramatura, materiał, temperatura prania, antyalergiczność i cena.',
-    url: 'https://ranking-materacow.pl/ranking-przescieradeł',
+    url: 'https://ranking-materacow.pl/ranking-przescieradel',
     type: 'article',
   },
 }
@@ -48,7 +48,7 @@ const jsonLd = {
           '@type': 'ListItem',
           position: 2,
           name: 'Ranking prześcieradeł 2026',
-          item: 'https://ranking-materacow.pl/ranking-przescieradeł',
+          item: 'https://ranking-materacow.pl/ranking-przescieradel',
         },
       ],
     },

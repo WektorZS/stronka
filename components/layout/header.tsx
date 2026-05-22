@@ -30,7 +30,7 @@ const navigation = [
     href: '/ranking',
     children: [
       { name: 'Ranking materaców 2026', href: '/ranking' },
-      { name: 'Ranking prześcieradeł 2026', href: '/ranking-przescieradeł' },
+      { name: 'Ranking prześcieradeł 2026', href: '/ranking-przescieradel' },
     ],
   },
   {

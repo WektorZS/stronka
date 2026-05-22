@@ -16,7 +16,7 @@ const tools = [
     title: 'Ranking prześcieradeł 2026',
     description: 'Top 5 prześcieradeł z gumką: bawełna vs poliester, gramatura, temperatura prania, certyfikaty.',
     icon: Scale,
-    href: '/ranking-przescieradeł',
+    href: '/ranking-przescieradel',
     color: 'bg-emerald-500/10 text-emerald-600',
     cta: 'Porównaj prześcieradła',
   },
