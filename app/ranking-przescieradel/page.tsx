@@ -223,7 +223,7 @@ export default function RankingPrzescieradelPage() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
 
           {/* ─── How we test ──────────────────────────────────── */}
-          <section className="mb-12">
+          <section className="my-12">
             <h2 className="text-2xl font-bold text-foreground mb-4">Jak testujemy prześcieradła?</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
               Każde prześcieradło oceniamy według 5 obiektywnych kryteriów, które mają realny wpływ
