@@ -539,7 +539,7 @@ export default function RankingPrzescieradelPage() {
           </div>
 
         </div>
-      </div>
+      
     </>
   )
 }
