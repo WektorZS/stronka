@@ -270,7 +270,7 @@ export function RankingPreview() {
           </Button>
 
           <Button asChild size="lg" variant="outline">
-            <Link href="/porownaj-materace">
+            <Link href="/porownaj">
               <Scale className="mr-2 h-4 w-4" />
               Porównaj materace
             </Link>
