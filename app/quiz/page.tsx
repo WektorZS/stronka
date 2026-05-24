@@ -39,8 +39,8 @@ const questions: Question[] = [
     icon: <User className="w-5 h-5" />,
     options: [
       { label: 'Poniżej 60 kg', value: 'light', description: 'Miększy materac zapewni Ci lepszy komfort i dopasowanie' },
-      { label: '60–80 kg', value: 'medium', description: 'Średnia twardość i gęstość pianki będą odpowiednie' },
-      { label: '80–100 kg', value: 'heavy', description: 'Twardszy materac z gęstszą pianką (35+ kg/m³) zapewni lepsze podparcie' },
+      { label: '60-80 kg', value: 'medium', description: 'Średnia twardość i gęstość pianki będą odpowiednie' },
+      { label: '80-100 kg', value: 'heavy', description: 'Twardszy materac z gęstszą pianką (35+ kg/m³) zapewni lepsze podparcie' },
       { label: 'Powyżej 100 kg', value: 'very_heavy', description: 'Konieczna wysoka gęstość pianki (40+ kg/m³) dla trwałości i wsparcia' },
     ]
   },
@@ -50,7 +50,7 @@ const questions: Question[] = [
     icon: <Activity className="w-5 h-5" />,
     options: [
       { label: 'Nie mam żadnych problemów', value: 'none' },
-      { label: 'Ból dolnego odcinka pleców', value: 'back_pain', description: 'Wymagane solidne podparcie lędźwi – priorytet wysoki support score' },
+      { label: 'Ból dolnego odcinka pleców', value: 'back_pain', description: 'Wymagane solidne podparcie lędźwi - priorytet wysoki support score' },
       { label: 'Ból szyi i karku', value: 'neck_pain', description: 'Ważna jest prawidłowa twardość i brak nadmiernego ugięcia' },
       { label: 'Bóle stawów / inne', value: 'other', description: 'Polecamy materace z pianką memory dla odciążenia stawów' },
     ]
@@ -71,7 +71,7 @@ const questions: Question[] = [
     icon: <Heart className="w-5 h-5" />,
     options: [
       { label: 'Śpię sam/sama', value: 'alone' },
-      { label: 'Tak, razem z partnerem', value: 'partner', description: 'Ważna izolacja ruchu – pianki memory lub pianka HR w wyższej gęstości' },
+      { label: 'Tak, razem z partnerem', value: 'partner', description: 'Ważna izolacja ruchu - pianki memory lub pianka HR w wyższej gęstości' },
       { label: 'Różnie bywa', value: 'sometimes' },
     ]
   },
@@ -80,9 +80,9 @@ const questions: Question[] = [
     question: 'Jaki jest Twój budżet na materac?',
     icon: <Wallet className="w-5 h-5" />,
     options: [
-      { label: 'Do 1000 zł', value: 'low', description: 'Modele budżetowe – IKEA, Matinee' },
-      { label: '1000–2000 zł', value: 'medium', description: 'Świetny stosunek jakości do ceny – Bett1, Janpol, JYSK' },
-      { label: '2000–4000 zł', value: 'high', description: 'Materace premium – Hilding, TEMPUR' },
+      { label: 'Do 1000 zł', value: 'low', description: 'Modele budżetowe - IKEA, Matinee' },
+      { label: '1000-2000 zł', value: 'medium', description: 'Świetny stosunek jakości do ceny - Bett1, Janpol, JYSK' },
+      { label: '2000-4000 zł', value: 'high', description: 'Materace premium - Hilding, TEMPUR' },
       { label: 'Powyżej 4000 zł', value: 'premium', description: 'Luksus bez kompromisów' },
     ]
   },
@@ -100,7 +100,7 @@ const questions: Question[] = [
 
 // ---- Scoring engine ----
 function scoreForAnswers(mattress: Mattress, answers: Record<string, string>): number {
-  let score = mattress.score * 10 // base: 0–100
+  let score = mattress.score * 10 // base: 0-100
 
   // 1. BUDGET MATCH
   const budget = answers.budget
@@ -130,7 +130,7 @@ function scoreForAnswers(mattress: Mattress, answers: Record<string, string>): n
     // medium firmness (4-6) is better
     score += mattress.firmness >= 4 && mattress.firmness <= 7 ? 10 : 0
   } else if (problems === 'other') {
-    // memory foam bonus – TEMPUR has best comfort
+    // memory foam bonus - TEMPUR has best comfort
     score += mattress.scores.comfort >= 9.0 ? 12 : mattress.scores.comfort >= 8.0 ? 6 : 0
   }
 
@@ -193,7 +193,7 @@ function scoreForAnswers(mattress: Mattress, answers: Record<string, string>): n
     else if (mattress.specs.trialType === 'exchange') score += 10
     else score -= 8
   } else {
-    // not_important – still small bonus for refund
+    // not_important - still small bonus for refund
     if (mattress.specs.trialType === 'refund') score += 5
   }
 

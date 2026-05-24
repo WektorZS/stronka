@@ -528,7 +528,7 @@ Przy tak wielu problemach, nawet niska cena niestety nas nie przekonuje`,
     image: '/images/mattresses/ikea-afjaell.jpg',
     score: 5.0,
     overallScore: 5.0,
-    shortDescription: 'Najtańszy materac w teście – z odpowiednio tanimi właściwościami.',
+    shortDescription: 'Najtańszy materac w teście - z odpowiednio tanimi właściwościami.',
     firmness: 6,
     warranty: '10 lat',
     scores: {

@@ -31,26 +31,26 @@ Wybór odpowiedniego materaca to jedna z najważniejszych decyzji dotyczących w
 ### Materace piankowe
 Materace piankowe są obecnie najpopularniejszym wyborem na polskim rynku. Wyróżniamy kilka typów pianek:
 
-- **Pianka poliuretanowa (PUR)** – podstawowy typ pianki, stosowany głównie w tańszych materacach
-- **Pianka wysokoelastyczna (HR)** – lepsza sprężystość i trwałość niż PUR
-- **Pianka termoelastyczna (memory foam)** – dopasowuje się do kształtu ciała pod wpływem ciepła
-- **Pianka lateksowa** – naturalna lub syntetyczna, bardzo trwała i sprężysta
+- **Pianka poliuretanowa (PUR)** - podstawowy typ pianki, stosowany głównie w tańszych materacach
+- **Pianka wysokoelastyczna (HR)** - lepsza sprężystość i trwałość niż PUR
+- **Pianka termoelastyczna (memory foam)** - dopasowuje się do kształtu ciała pod wpływem ciepła
+- **Pianka lateksowa** - naturalna lub syntetyczna, bardzo trwała i sprężysta
 
 ### Materace sprężynowe
 Tradycyjne materace sprężynowe dzielą się na:
 
-- **Materace bonellowe** – ze sprężynami połączonymi w całość
-- **Materace kieszeniowe** – każda sprężyna w osobnej kieszonce, niezależna praca
+- **Materace bonellowe** - ze sprężynami połączonymi w całość
+- **Materace kieszeniowe** - każda sprężyna w osobnej kieszonce, niezależna praca
 
 ## Kluczowe parametry
 
 ### Gęstość pianki
 Gęstość pianki (wyrażana w kg/m³) to jeden z najważniejszych parametrów wpływających na trwałość materaca:
 
-- **Poniżej 25 kg/m³** – niska jakość, szybkie zużycie
-- **25-35 kg/m³** – średnia jakość, odpowiednia dla gości
-- **35-50 kg/m³** – dobra jakość, zalecana do codziennego użytku
-- **Powyżej 50 kg/m³** – wysoka jakość, długa żywotność
+- **Poniżej 25 kg/m³** - niska jakość, szybkie zużycie
+- **25-35 kg/m³** - średnia jakość, odpowiednia dla gości
+- **35-50 kg/m³** - dobra jakość, zalecana do codziennego użytku
+- **Powyżej 50 kg/m³** - wysoka jakość, długa żywotność
 
 ### Twardość materaca
 Twardość materaca powinna być dopasowana do:
@@ -65,10 +65,10 @@ Osoby o większej wadze zazwyczaj potrzebują twardszego materaca, by uniknąć 
 
 Przed zakupem sprawdź:
 
-1. **Długość okresu testowego** – im dłuższy, tym lepiej (ideał to 100 dni)
-2. **Warunki zwrotu** – czy zwracane są pieniądze, czy tylko możliwa wymiana
+1. **Długość okresu testowego** - im dłuższy, tym lepiej (ideał to 100 dni)
+2. **Warunki zwrotu** - czy zwracane są pieniądze, czy tylko możliwa wymiana
 3. **Kto pokrywa koszty transportu** przy zwrocie
-4. **Długość gwarancji** – dobry materac powinien mieć min. 5-10 lat gwarancji
+4. **Długość gwarancji** - dobry materac powinien mieć min. 5-10 lat gwarancji
 
 ## Podsumowanie
 
@@ -112,9 +112,9 @@ Pianki o bardzo wysokiej gęstości mogą gorzej odprowadzać ciepło, co jest i
 
 ## Na co uważać?
 
-1. **Producenci nie zawsze podają gęstość** – jeśli informacja jest ukryta, może to oznaczać niską jakość
-2. **Różne warstwy mogą mieć różną gęstość** – ważna jest gęstość głównego rdzenia
-3. **Gęstość to nie to samo co twardość** – materac może być gęsty, ale miękki
+1. **Producenci nie zawsze podają gęstość** - jeśli informacja jest ukryta, może to oznaczać niską jakość
+2. **Różne warstwy mogą mieć różną gęstość** - ważna jest gęstość głównego rdzenia
+3. **Gęstość to nie to samo co twardość** - materac może być gęsty, ale miękki
 
 ## Podsumowanie
 
@@ -152,19 +152,19 @@ Prawidłowe podparcie kręgosłupa jest kluczowe dla zdrowego snu. Dobry materac
 ### Pozycja podczas snu
 Różne pozycje snu wymagają różnego podparcia:
 
-- **Na boku** – potrzebne większe zapadanie w okolicy ramion i bioder
-- **Na plecach** – wymaga podparcia dolnego odcinka kręgosłupa
-- **Na brzuchu** – rzadko zalecana pozycja, wymaga twardszego materaca
+- **Na boku** - potrzebne większe zapadanie w okolicy ramion i bioder
+- **Na plecach** - wymaga podparcia dolnego odcinka kręgosłupa
+- **Na brzuchu** - rzadko zalecana pozycja, wymaga twardszego materaca
 
 ## Objawy złego materaca
 
 Jeśli zauważasz u siebie te objawy, możliwe że Twój materac wymaga wymiany:
 
-1. **Bóle pleców po przebudzeniu** – ustępujące w ciągu dnia
-2. **Częste budzenie się w nocy** – bez wyraźnej przyczyny
-3. **Uczucie zmęczenia rano** – mimo odpowiedniej ilości snu
-4. **Sztywność mięśni** – szczególnie w okolicy karku i ramion
-5. **Widoczne odkształcenia materaca** – wgłębienia, wybrzuszenia
+1. **Bóle pleców po przebudzeniu** - ustępujące w ciągu dnia
+2. **Częste budzenie się w nocy** - bez wyraźnej przyczyny
+3. **Uczucie zmęczenia rano** - mimo odpowiedniej ilości snu
+4. **Sztywność mięśni** - szczególnie w okolicy karku i ramion
+5. **Widoczne odkształcenia materaca** - wgłębienia, wybrzuszenia
 
 ## Kiedy wymienić materac?
 
@@ -179,8 +179,8 @@ Materac należy wymienić gdy:
 
 1. **Dopasuj twardość do wagi i pozycji snu**
 2. **Wybierz materac z odpowiednio gęstą pianką** (min. 35 kg/m³)
-3. **Skorzystaj z okresu testowego** – ciało potrzebuje 2-4 tygodni adaptacji
-4. **Zwróć uwagę na hipoalergiczność** – szczególnie jeśli masz alergie
+3. **Skorzystaj z okresu testowego** - ciało potrzebuje 2-4 tygodni adaptacji
+4. **Zwróć uwagę na hipoalergiczność** - szczególnie jeśli masz alergie
 
 ## Podsumowanie
 
@@ -204,7 +204,7 @@ Materac w sklepie zawsze wydaje się wygodny po kilku minutach leżenia. Prawdzi
 ## Rodzaje okresów testowych
 
 ### Pełny zwrot pieniędzy
-Najkorzystniejsza opcja – producent odbiera materac i zwraca całą kwotę. W Polsce taką opcję oferuje m.in. Bett1.
+Najkorzystniejsza opcja - producent odbiera materac i zwraca całą kwotę. W Polsce taką opcję oferuje m.in. Bett1.
 
 ### Wymiana na inny model
 Możesz wymienić materac na inny, ale nie otrzymasz zwrotu pieniędzy. To rozwiązanie stosują m.in. JYSK i IKEA.
@@ -220,9 +220,9 @@ Niektórzy producenci nie oferują żadnego okresu testowego ponad ustawowe 14 d
 - Czy wymagana jest mata ochronna?
 
 ### 2. Czas trwania
-- 14 dni – ustawowe minimum dla zakupów online
-- 30-45 dni – standardowa oferta
-- 100+ dni – premium oferta
+- 14 dni - ustawowe minimum dla zakupów online
+- 30-45 dni - standardowa oferta
+- 100+ dni - premium oferta
 
 ### 3. Ukryte ograniczenia
 - Minimalna liczba nocy użytkowania przed zwrotem
@@ -241,7 +241,7 @@ Niektórzy producenci nie oferują żadnego okresu testowego ponad ustawowe 14 d
 
 ## Podsumowanie
 
-Okres testowy to nie tylko marketing – to realne zabezpieczenie Twojego zakupu. Przed zakupem dokładnie przeczytaj regulamin i sprawdź wszystkie warunki. Najlepsze oferty to te z pełnym zwrotem pieniędzy i darmowym odbiorem materaca.
+Okres testowy to nie tylko marketing - to realne zabezpieczenie Twojego zakupu. Przed zakupem dokładnie przeczytaj regulamin i sprawdź wszystkie warunki. Najlepsze oferty to te z pełnym zwrotem pieniędzy i darmowym odbiorem materaca.
     `,
   },
   {
@@ -261,30 +261,30 @@ Wybór między materacem piankowym a sprężynowym to jedna z pierwszych decyzji
 ## Materace piankowe
 
 ### Zalety
-- **Doskonała izolacja ruchu** – idealny dla par, ruch partnera nie przeszkadza
-- **Dopasowanie do ciała** – szczególnie pianki memory foam
-- **Cicha praca** – brak skrzypienia
-- **Hipoalergiczność** – brak przestrzeni dla roztoczy
-- **Łatwy transport** – często pakowane w rolkę
+- **Doskonała izolacja ruchu** - idealny dla par, ruch partnera nie przeszkadza
+- **Dopasowanie do ciała** - szczególnie pianki memory foam
+- **Cicha praca** - brak skrzypienia
+- **Hipoalergiczność** - brak przestrzeni dla roztoczy
+- **Łatwy transport** - często pakowane w rolkę
 
 ### Wady
-- **Gromadzenie ciepła** – niektóre pianki słabo odprowadzają ciepło
-- **Wolniejsza reakcja** – utrudnione obracanie się dla niektórych użytkowników
-- **Cena** – wysokiej jakości pianki są drogie
+- **Gromadzenie ciepła** - niektóre pianki słabo odprowadzają ciepło
+- **Wolniejsza reakcja** - utrudnione obracanie się dla niektórych użytkowników
+- **Cena** - wysokiej jakości pianki są drogie
 
 ## Materace sprężynowe
 
 ### Zalety
-- **Dobra wentylacja** – przestrzenie między sprężynami zapewniają przepływ powietrza
-- **Tradycyjne uczucie** – klasyczna sprężystość
-- **Niższa cena** – zwłaszcza modele bonellowe
-- **Szybka reakcja** – łatwe obracanie się
+- **Dobra wentylacja** - przestrzenie między sprężynami zapewniają przepływ powietrza
+- **Tradycyjne uczucie** - klasyczna sprężystość
+- **Niższa cena** - zwłaszcza modele bonellowe
+- **Szybka reakcja** - łatwe obracanie się
 
 ### Wady
-- **Przenoszenie ruchu** – szczególnie modele bonellowe
-- **Skrzypienie** – może pojawić się z czasem
-- **Roztocza** – przestrzenie między sprężynami sprzyjają ich rozwojowi
-- **Trudniejszy transport** – większa waga i objętość
+- **Przenoszenie ruchu** - szczególnie modele bonellowe
+- **Skrzypienie** - może pojawić się z czasem
+- **Roztocza** - przestrzenie między sprężynami sprzyjają ich rozwojowi
+- **Trudniejszy transport** - większa waga i objętość
 
 ## Który wybrać?
 
@@ -319,9 +319,9 @@ Oba typy materaców mogą zapewnić zdrowy sen, jeśli wybierzesz odpowiedni mod
 
 Obracanie materaca zapobiega nierównomiernemu zużyciu:
 
-- **Materace jednostronne** – obracaj 180° co 2-3 miesiące
-- **Materace dwustronne** – obracaj i przewracaj co 2-3 miesiące
-- **Nowe materace** – obracaj częściej przez pierwsze 3 miesiące
+- **Materace jednostronne** - obracaj 180° co 2-3 miesiące
+- **Materace dwustronne** - obracaj i przewracaj co 2-3 miesiące
+- **Nowe materace** - obracaj częściej przez pierwsze 3 miesiące
 
 ## Wietrzenie
 
@@ -335,7 +335,7 @@ Regularne wietrzenie jest kluczowe dla higieny:
 
 Pokrowiec materaca należy prać regularnie:
 
-- Sprawdź etykietę – różne materace mają różne wymagania
+- Sprawdź etykietę - różne materace mają różne wymagania
 - Większość pokrowców można prać w 40-60°C
 - Prana pokrowiec co 3-6 miesięcy
 - Używaj delikatnych detergentów
@@ -344,22 +344,22 @@ Pokrowiec materaca należy prać regularnie:
 
 Ochraniacze znacząco przedłużają żywotność materaca:
 
-- **Ochraniacze wodoodporne** – chronią przed wilgocią
-- **Ochraniacze przeciwroztoczowe** – dla alergików
-- **Nakładki na materac** – dodatkowy komfort i ochrona
+- **Ochraniacze wodoodporne** - chronią przed wilgocią
+- **Ochraniacze przeciwroztoczowe** - dla alergików
+- **Nakładki na materac** - dodatkowy komfort i ochrona
 
 ## Czego unikać?
 
-- **Nie skaczcie po materacu** – szczególnie dzieci
-- **Nie używaj agresywnych środków czystości** – mogą uszkodzić pianki
-- **Nie zginaj materaca** – może to uszkodzić strukturę
-- **Nie kładź ciężkich przedmiotów** – mogą powodować trwałe odkształcenia
+- **Nie skaczcie po materacu** - szczególnie dzieci
+- **Nie używaj agresywnych środków czystości** - mogą uszkodzić pianki
+- **Nie zginaj materaca** - może to uszkodzić strukturę
+- **Nie kładź ciężkich przedmiotów** - mogą powodować trwałe odkształcenia
 
 ## Usuwanie plam
 
 Przy okazjonalnych plamach:
 
-1. Działaj szybko – świeże plamy łatwiej usunąć
+1. Działaj szybko - świeże plamy łatwiej usunąć
 2. Użyj łagodnego roztworu wody z mydłem
 3. Delikatnie tamponuj, nie szoruj
 4. Dokładnie wysusz przed ponownym użyciem
@@ -385,19 +385,19 @@ Podczas nocy przechodzimy przez kilka cykli snu, z których każdy trwa około 9
 
 ## Fazy snu NREM
 
-### Faza N1 – Zasypianie
+### Faza N1 - Zasypianie
 - Trwa 1-7 minut
 - Płytki sen, łatwe przebudzenie
 - Przejście między czuwaniem a snem
 - Mogą wystąpić nagłe skurcze mięśni
 
-### Faza N2 – Sen lekki
+### Faza N2 - Sen lekki
 - Trwa 10-25 minut
 - Spadek temperatury ciała
 - Zwolnienie akcji serca
 - Stanowi około 50% całego snu
 
-### Faza N3 – Sen głęboki
+### Faza N3 - Sen głęboki
 - Najważniejsza faza regeneracyjna
 - Najtrudniejsze przebudzenie
 - Regeneracja fizyczna organizmu
@@ -422,10 +422,10 @@ Faza REM (Rapid Eye Movement) charakteryzuje się:
 
 Nieodpowiedni materac może zakłócać cykl snu:
 
-- **Częste budzenie** – przerywanie cykli snu
-- **Dyskomfort** – utrudnia wejście w głęboki sen
-- **Bóle** – skracają fazę REM
-- **Nadmierne ciepło** – utrudnia utrzymanie głębokiego snu
+- **Częste budzenie** - przerywanie cykli snu
+- **Dyskomfort** - utrudnia wejście w głęboki sen
+- **Bóle** - skracają fazę REM
+- **Nadmierne ciepło** - utrudnia utrzymanie głębokiego snu
 
 ## Ile snu potrzebujemy?
 
@@ -445,7 +445,7 @@ Zrozumienie faz snu pomaga docenić znaczenie nieprzerwanego, głębokiego wypoc
   {
     slug: 'materac-dla-par',
     title: 'Jak wybrać materac dla pary? Na co zwrócić uwagę?',
-    excerpt: 'Wybór materaca dla dwóch osób to wyzwanie. Różne preferencje, wagi i pozycje snu – jak znaleźć kompromis? Praktyczne porady dla par.',
+    excerpt: 'Wybór materaca dla dwóch osób to wyzwanie. Różne preferencje, wagi i pozycje snu - jak znaleźć kompromis? Praktyczne porady dla par.',
     date: '2026-02-20',
     category: 'Poradniki',
     readTime: '3 min',
@@ -473,8 +473,8 @@ To najważniejsza cecha dla par. Dobry materac powinien minimalizować przenosze
 ### Odpowiedni rozmiar
 Minimalny rozmiar dla pary to 160x200 cm. Jeśli pozwala przestrzeń, warto rozważyć:
 
-- 180x200 cm – komfortowa przestrzeń
-- 200x200 cm – luksusowa przestrzeń
+- 180x200 cm - komfortowa przestrzeń
+- 200x200 cm - luksusowa przestrzeń
 
 ### Strefy twardości
 Niektóre materace oferują różne strefy twardości dopasowane do różnych części ciała. To może być dobrym kompromisem dla par o różnych preferencjach.
@@ -495,10 +495,10 @@ Dodatkowa nakładka może wyrównać różnice w preferencjach i poprawić komfo
 
 ## Na co zwrócić uwagę przy zakupie?
 
-1. **Testujcie razem** – oboje powinniście być zadowoleni
-2. **Sprawdźcie izolację ruchu** – połóżcie się i zobaczcie, czy czujecie ruchy partnera
-3. **Uwzględnijcie różnicę wagi** – może wymagać kompromisu w twardości
-4. **Skorzystajcie z okresu testowego** – kilka nocy pokaże prawdę
+1. **Testujcie razem** - oboje powinniście być zadowoleni
+2. **Sprawdźcie izolację ruchu** - połóżcie się i zobaczcie, czy czujecie ruchy partnera
+3. **Uwzględnijcie różnicę wagi** - może wymagać kompromisu w twardości
+4. **Skorzystajcie z okresu testowego** - kilka nocy pokaże prawdę
 
 ## Podsumowanie
 
@@ -519,18 +519,18 @@ Wybór materaca dla pary wymaga kompromisu, ale istnieją rozwiązania dla róż
 
 Materac może być siedliskiem alergenów:
 
-- **Roztocza kurzu domowego** – żywią się martwym naskórkiem
-- **Pleśnie i grzyby** – rozwijają się w wilgotnym środowisku
-- **Pyłki** – mogą osiadać na powierzchni
-- **Sierść zwierząt** – jeśli zwierzęta mają dostęp do łóżka
+- **Roztocza kurzu domowego** - żywią się martwym naskórkiem
+- **Pleśnie i grzyby** - rozwijają się w wilgotnym środowisku
+- **Pyłki** - mogą osiadać na powierzchni
+- **Sierść zwierząt** - jeśli zwierzęta mają dostęp do łóżka
 
 ## Cechy hipoalergicznego materaca
 
 ### Materiały
 Najlepsze dla alergików:
-- **Lateks naturalny** – naturalnie odporny na roztocza
-- **Pianki poliuretanowe wysokiej gęstości** – gęsta struktura utrudnia osiedlanie się roztoczy
-- **Włókna syntetyczne** – łatwe do czyszczenia
+- **Lateks naturalny** - naturalnie odporny na roztocza
+- **Pianki poliuretanowe wysokiej gęstości** - gęsta struktura utrudnia osiedlanie się roztoczy
+- **Włókna syntetyczne** - łatwe do czyszczenia
 
 Unikaj:
 - Materaców sprężynowych z naturalnymi wypełnieniami
@@ -550,9 +550,9 @@ Unikaj:
 3. Wietrzenie sypialni codziennie
 
 ### Dodatki ochronne
-- **Ochraniacze antyroztoczowe** – szczelna bariera
-- **Poduszki hipoalergiczne** – dopełnienie ochrony
-- **Pościel z mikrofibry** – łatwa w praniu
+- **Ochraniacze antyroztoczowe** - szczelna bariera
+- **Poduszki hipoalergiczne** - dopełnienie ochrony
+- **Pościel z mikrofibry** - łatwa w praniu
 
 ### Kontrola wilgotności
 - Utrzymuj wilgotność poniżej 50%
@@ -600,8 +600,8 @@ To najpopularniejsza pozycja snu (około 60% ludzi). Charakterystyka:
 - Osoby cięższe: średnio-twardy (6-7/10)
 
 ### Na co uważać
-- Zbyt twardy materac – nacisk na ramię i biodro
-- Zbyt miękki – brak podparcia talii
+- Zbyt twardy materac - nacisk na ramię i biodro
+- Zbyt miękki - brak podparcia talii
 
 ## Sen na plecach
 
@@ -618,8 +618,8 @@ Pozycja korzystna dla kręgosłupa (około 30% ludzi):
 - Osoby cięższe: twardy (7-8/10)
 
 ### Na co uważać
-- Zbyt miękki materac – nadmierne ugięcie bioder
-- Zbyt twardy – luka pod lędźwiami
+- Zbyt miękki materac - nadmierne ugięcie bioder
+- Zbyt twardy - luka pod lędźwiami
 
 ## Sen na brzuchu
 
@@ -636,8 +636,8 @@ Najmniej zalecana pozycja (około 10% ludzi):
 - Osoby cięższe: twardy (7-8/10)
 
 ### Na co uważać
-- Zbyt miękki materac – nadmierne wyginanie kręgosłupa
-- Ta pozycja obciąża kark – rozważ zmianę nawyków
+- Zbyt miękki materac - nadmierne wyginanie kręgosłupa
+- Ta pozycja obciąża kark - rozważ zmianę nawyków
 
 ## Jeśli zmieniasz pozycje
 
@@ -649,7 +649,7 @@ Wielu ludzi zmienia pozycje podczas snu. W takim przypadku:
 
 ## Podsumowanie
 
-Pozycja snu to kluczowy czynnik przy wyborze materaca. Pamiętaj też o wadze – cięższe osoby potrzebują twardszych materaców niezależnie od pozycji. W razie wątpliwości skorzystaj z okresu testowego.
+Pozycja snu to kluczowy czynnik przy wyborze materaca. Pamiętaj też o wadze - cięższe osoby potrzebują twardszych materaców niezależnie od pozycji. W razie wątpliwości skorzystaj z okresu testowego.
     `,
   },
 ]

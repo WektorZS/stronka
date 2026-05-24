@@ -48,10 +48,10 @@ const recommendedMattresses = useMemo(() => {
   const qualityTier = useMemo(() => {
     const b = budget[0]
     const count = mattresses.filter(m => m.price <= b).length
-    if (b < 950) return { label: 'Podstawowy', color: 'bg-yellow-500', description: `${count} modeli do wyboru – dobre opcje tymczasowe` }
-    if (b < 1400) return { label: 'Dobry', color: 'bg-green-500', description: `${count} modeli do wyboru – optymalny stosunek jakości do ceny` }
-    if (b < 3400) return { label: 'Premium', color: 'bg-blue-500', description: `${count} modeli do wyboru – wysoka jakość materiałów` }
-    return { label: 'Luksusowy', color: 'bg-indigo-500', description: `Wszystkie ${count} modeli dostępne – najwyższa jakość` }
+    if (b < 950) return { label: 'Podstawowy', color: 'bg-yellow-500', description: `${count} modeli do wyboru - dobre opcje tymczasowe` }
+    if (b < 1400) return { label: 'Dobry', color: 'bg-green-500', description: `${count} modeli do wyboru - optymalny stosunek jakości do ceny` }
+    if (b < 3400) return { label: 'Premium', color: 'bg-blue-500', description: `${count} modeli do wyboru - wysoka jakość materiałów` }
+    return { label: 'Luksusowy', color: 'bg-indigo-500', description: `Wszystkie ${count} modeli dostępne - najwyższa jakość` }
   }, [budget])
 
   const budgetFeatures = useMemo(() => {

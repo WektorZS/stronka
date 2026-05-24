@@ -21,7 +21,7 @@ import { Card, CardContent } from '@/components/ui/card'
 import { getSheetsByRank } from '@/lib/sheets'
 
 export const metadata: Metadata = {
-  title: 'Ranking prześcieradeł 2026 – Top 5 | Bawełna vs Poliester',
+  title: 'Ranking prześcieradeł 2026 - Top 5 | Bawełna vs Poliester',
   description:
     'Ranking Top 5 prześcieradeł z gumką 90x200 cm. Porównanie bawełny i poliestru: gramatura, temperatura prania, antyalergiczność, cena. Sprawdź, które prześcieradło wybrać.',
   keywords: [
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: '/ranking-przescieradel' },
   openGraph: {
-    title: 'Ranking prześcieradeł 2026 – Top 5 | Bawełna vs Poliester',
+    title: 'Ranking prześcieradeł 2026 - Top 5 | Bawełna vs Poliester',
     description:
       'Porównanie 5 prześcieradeł z gumką 90x200: gramatura, materiał, temperatura prania, antyalergiczność i cena.',
     url: 'https://ranking-materacow.pl/ranking-przescieradel',
@@ -64,7 +64,7 @@ const jsonLd = {
     },
     {
       '@type': 'Article',
-      headline: 'Ranking prześcieradeł 2026 – Top 5 Bawełna vs Poliester',
+      headline: 'Ranking prześcieradeł 2026 - Top 5 Bawełna vs Poliester',
       description:
         'Porównanie 5 najpopularniejszych prześcieradeł z gumką 90x200 cm dostępnych w Polsce. Sprawdzamy materiał, gramaturę, temperaturę prania, certyfikaty i ceny.',
       datePublished: '2026-05-22',
@@ -74,7 +74,7 @@ const jsonLd = {
     },
     {
       '@type': 'ItemList',
-      name: 'Ranking prześcieradeł 2026 – Top 5',
+      name: 'Ranking prześcieradeł 2026 - Top 5',
       numberOfItems: 5,
       itemListElement: [
         { '@type': 'ListItem', position: 1, name: 'bett1 Jersey z gumką BODYGUARD®', url: 'https://www.bett1.pl/produkty/przescieradlo-jersey-z-gumka-bodyguard-90-100x200-biale' },
@@ -246,7 +246,7 @@ export default function RankingPrzescieradelPage() {
                   <Badge className="bg-slate-500 text-white border-0 mb-3">Tylko budżetowe</Badge>
                   <p className="font-semibold text-foreground text-sm mb-1">Terra Beds / home&you</p>
                   <p className="text-xs text-muted-foreground leading-relaxed">
-                    Poliester ogranicza oddychalność i higienę. Pranie max 30–40°C
+                    Poliester ogranicza oddychalność i higienę. Pranie max 30-40°C
                     może być mniej korzystny dla alergików. Opcja budżetowa.
                   </p>
                 </CardContent>
@@ -487,7 +487,7 @@ export default function RankingPrzescieradelPage() {
             <div>
               <h3 className="font-bold text-foreground mb-1">Porównaj prześcieradła obok siebie</h3>
               <p className="text-sm text-muted-foreground">
-                Skorzystaj z naszej porównywarki, aby zestawić parametry dowolnych 2–3 modeli
+                Skorzystaj z naszej porównywarki, aby zestawić parametry dowolnych 2-3 modeli
               </p>
             </div>
             <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white shrink-0">
