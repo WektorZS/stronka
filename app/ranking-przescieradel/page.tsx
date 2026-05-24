@@ -132,7 +132,7 @@ export default function RankingPrzescieradelPage() {
 
       {/* ─── Hero ─────────────────────────────────────────────── */}
       <section className="bg-gradient-to-b from-blue-500/8 to-background pt-10 pb-0">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-10 max-w-6xl">
+        <div className="w-full px-4 sm:px-6 lg:px-10">
           {/* Breadcrumbs */}
           <nav aria-label="Breadcrumb" className="mb-6">
             <ol className="flex items-center gap-1.5 text-sm text-muted-foreground flex-wrap">
@@ -190,7 +190,7 @@ export default function RankingPrzescieradelPage() {
 
         {/* Hero visual strip — quick ranking summary */}
         <div className="border-t border-border bg-card">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-10 max-w-6xl">
+          <div className="w-full px-4 sm:px-6 lg:px-10">
             <div className="grid grid-cols-1 sm:grid-cols-5 divide-y sm:divide-y-0 sm:divide-x divide-border">
               {allSheets.map((sheet, i) => (
                 <a
@@ -220,8 +220,8 @@ export default function RankingPrzescieradelPage() {
         </div>
       </section>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-10 max-w-6xl">
-        <div className="max-w-5xl">
+      <div className="w-full px-4 sm:px-6 lg:px-10">
+        <div className="w-full">
 
           {/* ─── How we test ──────────────────────────────────── */}
           <section className="mb-12">
