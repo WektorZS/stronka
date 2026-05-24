@@ -171,7 +171,7 @@ export default function RankingPrzescieradelPage() {
               <strong className="text-foreground">gramaturę tkaniny</strong>,{' '}
               <strong className="text-foreground">temperaturę prania</strong>,{' '}
               <strong className="text-foreground">antyalergiczność</strong> i{' '}
-              <strong className="text-foreground">cenę</strong>. Spoiler: różnice są znaczące.
+              <strong className="text-foreground">cenę</strong>.
             </p>
 
             <div className="flex flex-wrap gap-3">
