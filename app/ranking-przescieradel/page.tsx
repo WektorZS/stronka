@@ -286,187 +286,153 @@ export default function RankingPrzescieradelPage() {
           </section>
 
           {/* ─── Individual product deep-dives ───────────────── */}
-          <section id="wyniki" className="mb-12">
-            <h2 className="text-2xl font-bold text-foreground mb-6">
-              Top 5 prześcieradeł — szczegółowe opisy
-            </h2>
+{/* ─── Ranking Section (NOWY LAYOUT) ─────────────────────── */}
+<section id="wyniki" className="py-8 sm:py-12 lg:py-16">
+  <div className="container mx-auto px-4 sm:px-6 lg:px-8">
 
-            <div className="space-y-10">
-              {allSheets.map((sheet, index) => (
-                <article key={sheet.id} id={sheet.id} className="scroll-mt-24">
-                  {/* Article header */}
-                  <div className={`rounded-2xl border overflow-hidden ${index === 0 ? 'border-blue-300 ring-1 ring-blue-200' : 'border-border'}`}>
-                    {/* Colored header strip */}
-                    <div className={`px-6 py-3 flex items-center justify-between ${index === 0 ? 'bg-blue-600' : 'bg-muted'}`}>
-                      <div className="flex items-center gap-3">
-                        <span className={`w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm ${
-                          index === 0 ? 'bg-white text-blue-600' :
-                          index === 1 ? 'bg-slate-400 text-white' :
-                          index === 2 ? 'bg-amber-500 text-white' :
-                          'bg-slate-200 text-slate-600'
-                        }`}>{sheet.rank}</span>
-                        <span className={`font-semibold text-sm ${index === 0 ? 'text-white' : 'text-foreground'}`}>
-                          {index === 0 ? 'Wybór redakcji — najlepszy wynik' :
-                           index === 1 ? 'Najlepsza cena/jakość' :
-                           index === 2 ? 'Dobre, ale z zastrzeżeniami' :
-                           'Gorszy wybór — poliester'}
-                        </span>
-                      </div>
-                      <div className={`flex items-center gap-1 ${index === 0 ? 'text-white' : 'text-foreground'}`}>
-                        <Star className={`w-4 h-4 ${index === 0 ? 'fill-white text-white' : 'fill-primary text-primary'}`} />
-                        <span className="font-bold text-lg">{sheet.score.toFixed(1)}</span>
-                      </div>
-                    </div>
+    {/* Header */}
+    <div className="max-w-3xl mb-10">
+      <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
+        Top 5 prześcieradeł — szczegółowe opisy
+      </h2>
+      <p className="text-lg text-muted-foreground">
+        Każde prześcieradło oceniliśmy według materiału, gramatury, temperatury prania,
+        właściwości antyalergicznych i ceny. Poniżej pełne zestawienie modeli od najlepszego.
+      </p>
 
-                    {/* Content */}
-                    <div className="p-6">
-                      <div className="flex flex-col md:flex-row gap-6">
-                        {/* Image */}
-                        <div className="shrink-0 md:w-48 lg:w-56">
-                          <div className="relative aspect-[4/3] rounded-xl overflow-hidden bg-muted">
-                            <Image
-                              src={sheet.image}
-                              alt={`${sheet.brand} ${sheet.name} prześcieradło`}
-                              fill
-                              className="object-cover"
-                              sizes="(max-width: 768px) 100vw, 224px"
-                            />
-                          </div>
-                          {/* Quick specs below image */}
-                          <div className="mt-3 space-y-2">
-                            <WashTempBadge temp={sheet.washTemp} />
-                            <div className="block">
-                              <MaterialBadge type={sheet.materialType} material={sheet.material} />
-                            </div>
-                            <div className="flex items-center gap-1.5 text-xs text-muted-foreground">
-                              <Layers className="w-3 h-3" />
-                              Gramatura: <GramScore g={sheet.gramatura} />
-                            </div>
-                          </div>
-                        </div>
+      <div className="flex items-start gap-3 p-4 bg-muted rounded-lg mt-6">
+        <Info className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+        <p className="text-sm text-muted-foreground">
+          Wszystkie produkty porównujemy w rozmiarze 90×200 cm. Linki prowadzą do oficjalnych sklepów lub sprzedawców.
+        </p>
+      </div>
+    </div>
 
-                        {/* Editorial text */}
-                        <div className="flex-1 min-w-0">
-                          <div className="flex flex-wrap items-start gap-2 mb-2">
-                            <span className="text-sm text-muted-foreground">{sheet.brand}</span>
-                            {sheet.oekotex && (
-                              <Badge className="bg-blue-100 text-blue-700 border-0 text-xs">Oeko-Tex® Std 100</Badge>
-                            )}
-                            {sheet.materialType === 'cotton' ? (
-                              <Badge className="bg-green-100 text-green-700 border-0 text-xs">Bawełna</Badge>
-                            ) : (
-                              <Badge className="bg-slate-100 text-slate-600 border-0 text-xs">Poliester</Badge>
-                            )}
-                          </div>
+    {/* Ranking list */}
+    <div className="space-y-6">
+      {allSheets.map((sheet) => (
+        <article
+          key={sheet.id}
+          id={sheet.id}
+          className="rounded-xl border border-border bg-card overflow-hidden"
+        >
+          <div className="p-5 sm:p-6 flex flex-col md:flex-row gap-6">
 
-                          <h3 className="text-xl md:text-2xl font-bold text-foreground mb-1">
-                            {sheet.brand} {sheet.name}
-                          </h3>
+            {/* LEFT */}
+            <div className="md:w-56 shrink-0">
+              <div className="relative aspect-[4/3] rounded-lg overflow-hidden bg-muted">
+                <Image
+                  src={sheet.image}
+                  alt={`${sheet.brand} ${sheet.name}`}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 224px"
+                />
+              </div>
 
-                          {/* Summary box — like n-tv "Kurz gefasst" */}
-                          <div className={`text-sm font-medium px-4 py-3 rounded-lg mb-4 leading-relaxed ${
-                            index === 0
-                              ? 'bg-blue-50 text-blue-800 border border-blue-200'
-                              : index <= 2
-                                ? 'bg-muted text-foreground border border-border'
-                                : 'bg-slate-50 text-slate-700 border border-slate-200'
-                          }`}>
-                            <span className="font-semibold">Krótko: </span>{sheet.shortDescription}
-                          </div>
+              <div className="mt-3 space-y-2">
+                <WashTempBadge temp={sheet.washTemp} />
+                <MaterialBadge type={sheet.materialType} material={sheet.material} />
 
-                          {/* Editorial paragraph */}
-                          <p className="text-muted-foreground leading-relaxed mb-5 text-sm">
-                            {sheet.verdict}
-                          </p>
-
-                          {/* Pros & Cons side by side */}
-                          <div className="grid sm:grid-cols-2 gap-4 mb-5">
-                            <div>
-                              <h4 className="text-sm font-semibold text-green-700 mb-2 flex items-center gap-1">
-                                <Check className="w-4 h-4" /> Zalety
-                              </h4>
-                              <ul className="space-y-1.5">
-                                {sheet.pros.map((pro, i) => (
-                                  <li key={i} className="text-xs text-muted-foreground flex items-start gap-1.5">
-                                    <Check className="w-3 h-3 text-green-600 shrink-0 mt-0.5" />
-                                    {pro}
-                                  </li>
-                                ))}
-                              </ul>
-                            </div>
-                            <div>
-                              <h4 className="text-sm font-semibold text-red-600 mb-2 flex items-center gap-1">
-                                <X className="w-4 h-4" /> Wady
-                              </h4>
-                              <ul className="space-y-1.5">
-                                {sheet.cons.map((con, i) => (
-                                  <li key={i} className="text-xs text-muted-foreground flex items-start gap-1.5">
-                                    <X className="w-3 h-3 text-red-500 shrink-0 mt-0.5" />
-                                    {con}
-                                  </li>
-                                ))}
-                              </ul>
-                            </div>
-                          </div>
-
-                          {/* Specs table */}
-                          <div className="bg-muted/50 rounded-lg p-4 mb-5 text-sm">
-                            <h4 className="font-semibold text-foreground mb-3 text-xs uppercase tracking-wide text-muted-foreground">Parametry techniczne</h4>
-                            <dl className="grid grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-2">
-                              <div>
-                                <dt className="text-xs text-muted-foreground">Materiał</dt>
-                                <dd className="font-medium text-foreground text-xs">{sheet.material}</dd>
-                              </div>
-                              <div>
-                                <dt className="text-xs text-muted-foreground">Gramatura</dt>
-                                <dd className="font-medium text-xs"><GramScore g={sheet.gramatura} /></dd>
-                              </div>
-                              <div>
-                                <dt className="text-xs text-muted-foreground">Temp. prania maks.</dt>
-                                <dd className="font-medium text-xs"><WashTempBadge temp={sheet.washTemp} /></dd>
-                              </div>
-                              <div>
-                                <dt className="text-xs text-muted-foreground">Antyalergiczne</dt>
-                                <dd className={`font-medium text-xs ${sheet.hypoallergenic ? 'text-green-700' : 'text-muted-foreground'}`}>
-                                  {sheet.hypoallergenic ? 'Tak' : 'Nie'}
-                                </dd>
-                              </div>
-                              <div>
-                                <dt className="text-xs text-muted-foreground">Oeko-Tex® Std 100</dt>
-                                <dd className={`font-medium text-xs ${sheet.oekotex ? 'text-green-700' : 'text-muted-foreground'}`}>
-                                  {sheet.oekotex ? 'Certyfikat' : 'Brak'}
-                                </dd>
-                              </div>
-                              <div>
-                                <dt className="text-xs text-muted-foreground">Elastan</dt>
-                                <dd className="font-medium text-xs text-muted-foreground">{sheet.elastan ? 'Tak' : 'Nie'}</dd>
-                              </div>
-                            </dl>
-                          </div>
-
-                          {/* Price + CTA */}
-                          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                            <div>
-                              <p className="text-3xl font-bold text-foreground">
-                                {sheet.price % 1 === 0 ? `${sheet.price} zł` : `${sheet.price.toFixed(2)} zł`}
-                              </p>
-                              <p className="text-xs text-muted-foreground">rozmiar 90&times;200 cm</p>
-                            </div>
-                            <Button asChild className={index === 0 ? 'bg-blue-600 hover:bg-blue-700 text-white' : ''}>
-                              <a href={sheet.url} target="_blank" rel="noopener noreferrer">
-                                Sprawdź cenę
-                                <ExternalLink className="ml-2 h-4 w-4" />
-                              </a>
-                            </Button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-              ))}
+                <div className="flex items-center gap-1 text-xs text-muted-foreground">
+                  <Layers className="w-3 h-3" />
+                  Gramatura: <GramScore g={sheet.gramatura} />
+                </div>
+              </div>
             </div>
-          </section>
+
+            {/* RIGHT */}
+            <div className="flex-1">
+
+              {/* top row */}
+              <div className="flex items-start justify-between gap-3 mb-2">
+                <div>
+                  <p className="text-sm text-muted-foreground">{sheet.brand}</p>
+                  <h3 className="text-xl font-bold text-foreground">
+                    {sheet.name}
+                  </h3>
+                </div>
+
+                <div className="flex items-center gap-1 text-primary">
+                  <Star className="w-4 h-4 fill-primary" />
+                  <span className="font-bold">{sheet.score.toFixed(1)}</span>
+                </div>
+              </div>
+
+              {/* badges */}
+              <div className="flex flex-wrap gap-2 mb-3">
+                {sheet.oekotex && (
+                  <Badge className="bg-blue-100 text-blue-700 border-0">
+                    Oeko-Tex®
+                  </Badge>
+                )}
+                {sheet.materialType === 'cotton' ? (
+                  <Badge className="bg-green-100 text-green-700 border-0">
+                    Bawełna
+                  </Badge>
+                ) : (
+                  <Badge className="bg-slate-100 text-slate-600 border-0">
+                    Poliester
+                  </Badge>
+                )}
+              </div>
+
+              {/* short */}
+              <p className="text-sm text-muted-foreground mb-4">
+                {sheet.shortDescription}
+              </p>
+
+              {/* pros / cons */}
+              <div className="grid sm:grid-cols-2 gap-4 mb-4">
+                <div>
+                  <p className="text-sm font-semibold text-green-700 mb-2">Zalety</p>
+                  <ul className="space-y-1 text-xs text-muted-foreground">
+                    {sheet.pros.map((p, i) => (
+                      <li key={i} className="flex gap-1">
+                        <Check className="w-3 h-3 text-green-600 mt-0.5" />
+                        {p}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div>
+                  <p className="text-sm font-semibold text-red-600 mb-2">Wady</p>
+                  <ul className="space-y-1 text-xs text-muted-foreground">
+                    {sheet.cons.map((c, i) => (
+                      <li key={i} className="flex gap-1">
+                        <X className="w-3 h-3 text-red-500 mt-0.5" />
+                        {c}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+
+              {/* footer */}
+              <div className="flex items-center justify-between">
+                <p className="text-2xl font-bold">
+                  {sheet.price % 1 === 0
+                    ? `${sheet.price} zł`
+                    : `${sheet.price.toFixed(2)} zł`}
+                </p>
+
+                <Button asChild>
+                  <a href={sheet.url} target="_blank" rel="noopener noreferrer">
+                    Sprawdź cenę
+                    <ExternalLink className="ml-2 h-4 w-4" />
+                  </a>
+                </Button>
+              </div>
+
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+
+  </div>
+</section>
 
           {/* ─── Buying guide ─────────────────────────────────── */}
           <section className="mb-12 prose prose-slate max-w-none">
