@@ -104,7 +104,7 @@ function WashTempBadge({ temp }: { temp: number }) {
 
 function MaterialBadge({ type, material }: { type: string; material: string }) {
   return type === 'cotton' ? (
-    <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-semibold border bg-emerald-100 text-emerald-700 border-emerald-200">
+    <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-semibold border bg-blue-100 text-blue-700 border-blue-200">
       <Check className="w-3 h-3" />
       {material}
     </span>
@@ -118,7 +118,7 @@ function MaterialBadge({ type, material }: { type: string; material: string }) {
 
 function GramScore({ g }: { g: number }) {
   const cls =
-    g >= 200 ? 'text-emerald-700 font-bold' : g >= 130 ? 'text-amber-700 font-semibold' : 'text-red-700 font-semibold'
+    g >= 200 ? 'text-blue-700 font-bold' : g >= 130 ? 'text-amber-700 font-semibold' : 'text-red-700 font-semibold'
   return <span className={cls}>{g} g/m²</span>
 }
 
@@ -131,8 +131,8 @@ export default function RankingPrzescieradelPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       {/* ─── Hero ─────────────────────────────────────────────── */}
-      <section className="bg-gradient-to-b from-emerald-500/8 to-background pt-10 pb-0">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="bg-gradient-to-b from-blue-500/8 to-background pt-10 pb-0">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-10 max-w-6xl">
           {/* Breadcrumbs */}
           <nav aria-label="Breadcrumb" className="mb-6">
             <ol className="flex items-center gap-1.5 text-sm text-muted-foreground flex-wrap">
@@ -146,7 +146,7 @@ export default function RankingPrzescieradelPage() {
 
           <div className="max-w-3xl mb-8">
             <div className="flex flex-wrap items-center gap-3 mb-4">
-              <span className="inline-flex items-center gap-1.5 bg-emerald-500/10 text-emerald-700 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide border border-emerald-200">
+              <span className="inline-flex items-center gap-1.5 bg-blue-500/10 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide border border-blue-200">
                 Test redakcji
               </span>
               <span className="inline-flex items-center gap-1.5 text-muted-foreground text-xs">
@@ -161,7 +161,7 @@ export default function RankingPrzescieradelPage() {
 
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-5 text-balance leading-tight">
               Prześcieradła z gumką w teście:{' '}
-              <span className="text-emerald-600">na którym śpi się najlepiej?</span>
+              <span className="text-blue-600">na którym śpi się najlepiej?</span>
             </h1>
 
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
@@ -175,7 +175,7 @@ export default function RankingPrzescieradelPage() {
             </p>
 
             <div className="flex flex-wrap gap-3">
-              <Button asChild size="sm" className="bg-emerald-600 hover:bg-emerald-700 text-white">
+              <Button asChild size="sm" className="bg-blue-600 hover:bg-blue-700 text-white">
                 <a href="#wyniki">Przejdź do wyników</a>
               </Button>
               <Button asChild size="sm" variant="outline">
@@ -190,17 +190,17 @@ export default function RankingPrzescieradelPage() {
 
         {/* Hero visual strip — quick ranking summary */}
         <div className="border-t border-border bg-card">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-10 max-w-6xl">
             <div className="grid grid-cols-1 sm:grid-cols-5 divide-y sm:divide-y-0 sm:divide-x divide-border">
               {allSheets.map((sheet, i) => (
                 <a
                   key={sheet.id}
                   href={`#${sheet.id}`}
-                  className={`flex sm:flex-col items-center sm:justify-center gap-3 sm:gap-1 px-4 py-4 sm:py-5 hover:bg-muted/50 transition-colors ${i === 0 ? 'sm:border-b-2 sm:border-b-emerald-500' : ''}`}
+                  className={`flex sm:flex-col items-center sm:justify-center gap-3 sm:gap-1 px-4 py-4 sm:py-5 hover:bg-muted/50 transition-colors ${i === 0 ? 'sm:border-b-2 sm:border-b-blue-500' : ''}`}
                 >
                   <div
                     className={`w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm shrink-0 ${
-                      i === 0 ? 'bg-emerald-500 text-white' : i === 1 ? 'bg-slate-400 text-white' : i === 2 ? 'bg-amber-500 text-white' : 'bg-muted text-muted-foreground'
+                      i === 0 ? 'bg-blue-500 text-white' : i === 1 ? 'bg-slate-400 text-white' : i === 2 ? 'bg-amber-500 text-white' : 'bg-muted text-muted-foreground'
                     }`}
                   >
                     {sheet.rank}
@@ -220,8 +220,8 @@ export default function RankingPrzescieradelPage() {
         </div>
       </section>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="max-w-4xl">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-10 max-w-6xl">
+        <div className="max-w-5xl">
 
           {/* ─── How we test ──────────────────────────────────── */}
           <section className="mb-12">
@@ -240,7 +240,7 @@ export default function RankingPrzescieradelPage() {
                 { icon: Scale, label: 'Cena', desc: 'Stosunek jakości do ceny' },
               ].map(({ icon: Icon, label, desc }) => (
                 <div key={label} className="flex flex-col items-start gap-1.5 p-4 rounded-xl bg-muted/50 border border-border">
-                  <Icon className="w-5 h-5 text-emerald-600 shrink-0" />
+                  <Icon className="w-5 h-5 text-blue-600 shrink-0" />
                   <p className="text-sm font-semibold text-foreground">{label}</p>
                   <p className="text-xs text-muted-foreground leading-snug">{desc}</p>
                 </div>
@@ -252,9 +252,9 @@ export default function RankingPrzescieradelPage() {
           <section className="mb-12">
             <h2 className="text-2xl font-bold text-foreground mb-4">Który wybrać? Krótkie podsumowanie</h2>
             <div className="grid sm:grid-cols-3 gap-4">
-              <Card className="border-emerald-200 bg-emerald-50/50">
+              <Card className="border-blue-200 bg-blue-50/50">
                 <CardContent className="p-5">
-                  <Badge className="bg-emerald-600 text-white border-0 mb-3">Wybór redakcji</Badge>
+                  <Badge className="bg-blue-600 text-white border-0 mb-3">Wybór redakcji</Badge>
                   <p className="font-semibold text-foreground text-sm mb-1">bett1 BODYGUARD®</p>
                   <p className="text-xs text-muted-foreground leading-relaxed">
                     Najwyższa gramatura (240 g/m²), certyfikat Oeko-Tex®, pranie 60°C,
@@ -295,12 +295,12 @@ export default function RankingPrzescieradelPage() {
               {allSheets.map((sheet, index) => (
                 <article key={sheet.id} id={sheet.id} className="scroll-mt-24">
                   {/* Article header */}
-                  <div className={`rounded-2xl border overflow-hidden ${index === 0 ? 'border-emerald-300 ring-1 ring-emerald-200' : 'border-border'}`}>
+                  <div className={`rounded-2xl border overflow-hidden ${index === 0 ? 'border-blue-300 ring-1 ring-blue-200' : 'border-border'}`}>
                     {/* Colored header strip */}
-                    <div className={`px-6 py-3 flex items-center justify-between ${index === 0 ? 'bg-emerald-600' : 'bg-muted'}`}>
+                    <div className={`px-6 py-3 flex items-center justify-between ${index === 0 ? 'bg-blue-600' : 'bg-muted'}`}>
                       <div className="flex items-center gap-3">
                         <span className={`w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm ${
-                          index === 0 ? 'bg-white text-emerald-600' :
+                          index === 0 ? 'bg-white text-blue-600' :
                           index === 1 ? 'bg-slate-400 text-white' :
                           index === 2 ? 'bg-amber-500 text-white' :
                           'bg-slate-200 text-slate-600'
@@ -350,7 +350,7 @@ export default function RankingPrzescieradelPage() {
                           <div className="flex flex-wrap items-start gap-2 mb-2">
                             <span className="text-sm text-muted-foreground">{sheet.brand}</span>
                             {sheet.oekotex && (
-                              <Badge className="bg-emerald-100 text-emerald-700 border-0 text-xs">Oeko-Tex® Std 100</Badge>
+                              <Badge className="bg-blue-100 text-blue-700 border-0 text-xs">Oeko-Tex® Std 100</Badge>
                             )}
                             {sheet.materialType === 'cotton' ? (
                               <Badge className="bg-green-100 text-green-700 border-0 text-xs">Bawełna</Badge>
@@ -366,7 +366,7 @@ export default function RankingPrzescieradelPage() {
                           {/* Summary box — like n-tv "Kurz gefasst" */}
                           <div className={`text-sm font-medium px-4 py-3 rounded-lg mb-4 leading-relaxed ${
                             index === 0
-                              ? 'bg-emerald-50 text-emerald-800 border border-emerald-200'
+                              ? 'bg-blue-50 text-blue-800 border border-blue-200'
                               : index <= 2
                                 ? 'bg-muted text-foreground border border-border'
                                 : 'bg-slate-50 text-slate-700 border border-slate-200'
@@ -452,7 +452,7 @@ export default function RankingPrzescieradelPage() {
                               </p>
                               <p className="text-xs text-muted-foreground">rozmiar 90&times;200 cm</p>
                             </div>
-                            <Button asChild className={index === 0 ? 'bg-emerald-600 hover:bg-emerald-700 text-white' : ''}>
+                            <Button asChild className={index === 0 ? 'bg-blue-600 hover:bg-blue-700 text-white' : ''}>
                               <a href={sheet.url} target="_blank" rel="noopener noreferrer">
                                 Sprawdź cenę
                                 <ExternalLink className="ml-2 h-4 w-4" />
@@ -486,11 +486,11 @@ export default function RankingPrzescieradelPage() {
                   Generuje też ładunki elektrostatyczne, co może być uciążliwe.
                 </p>
                 <div className="grid sm:grid-cols-2 gap-3">
-                  <div className="flex items-start gap-3 p-3 rounded-lg bg-emerald-50 border border-emerald-200">
-                    <Check className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
+                  <div className="flex items-start gap-3 p-3 rounded-lg bg-blue-50 border border-blue-200">
+                    <Check className="w-4 h-4 text-blue-600 shrink-0 mt-0.5" />
                     <div>
-                      <p className="text-sm font-semibold text-emerald-800">Bawełna</p>
-                      <p className="text-xs text-emerald-700">Oddycha, pochłania wilgoć, brak elektryczności statycznej, lepsza dla alergików</p>
+                      <p className="text-sm font-semibold text-blue-800">Bawełna</p>
+                      <p className="text-xs text-blue-700">Oddycha, pochłania wilgoć, brak elektryczności statycznej, lepsza dla alergików</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3 p-3 rounded-lg bg-slate-50 border border-slate-200">
@@ -548,14 +548,14 @@ export default function RankingPrzescieradelPage() {
           </section>
 
           {/* ─── Compare CTA ──────────────────────────────────── */}
-          <div className="rounded-2xl bg-gradient-to-r from-emerald-500/10 to-emerald-500/5 border border-emerald-200 p-6 mb-12 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div className="rounded-2xl bg-gradient-to-r from-blue-500/10 to-blue-500/5 border border-blue-200 p-6 mb-12 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
             <div>
               <h3 className="font-bold text-foreground mb-1">Porównaj prześcieradła obok siebie</h3>
               <p className="text-sm text-muted-foreground">
                 Skorzystaj z naszej porównywarki, aby zestawić parametry dowolnych 2–3 modeli
               </p>
             </div>
-            <Button asChild className="bg-emerald-600 hover:bg-emerald-700 text-white shrink-0">
+            <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white shrink-0">
               <Link href="/porownaj-przescieradla">
                 <Scale className="mr-2 h-4 w-4" />
                 Otwórz porównywarkę
