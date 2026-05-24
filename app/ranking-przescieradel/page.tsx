@@ -414,7 +414,7 @@ export default function RankingPrzescieradelPage() {
               <div>
                 <h3 className="text-lg font-semibold text-foreground mb-2">Materiał: bawełna vs poliester</h3>
                 <p className="text-muted-foreground leading-relaxed text-sm mb-3">
-                  <strong className="text-foreground">Jersey</strong>  to nie materiał, a technika tkania - może być wykonany z bawełny, poliestru
+                  <strong className="text-foreground">Jersey</strong>&nbsp;to nie materiał, a technika tkania - może być wykonany z bawełny, poliestru
                   lub wiskozy. Bawełna jerseyowa jest miękka, elastyczna i oddychająca. Pochłania wilgoć
                   (pot) i oddaje ją z powrotem, regulując temperaturę ciała podczas snu. Poliester (mikrofibra)
                   jest tańszy w produkcji, ale gorzej oddycha - w ciepłe noce powoduje efekt &quot;folii&quot;.
