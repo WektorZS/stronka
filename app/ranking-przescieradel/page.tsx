@@ -188,38 +188,7 @@ export default function RankingPrzescieradelPage() {
           </div>
         </div>
 
-        {/* Hero visual strip - quick ranking summary */}
-        <div className="border-t border-border bg-card">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 sm:grid-cols-5 divide-y sm:divide-y-0 sm:divide-x divide-border">
-              {allSheets.map((sheet, i) => (
-                <a
-                  key={sheet.id}
-                  href={`#${sheet.id}`}
-                  className={`flex sm:flex-col items-center sm:justify-center gap-3 sm:gap-1 px-4 py-4 sm:py-5 hover:bg-muted/50 transition-colors ${i === 0 ? 'sm:border-b-2 sm:border-b-blue-500' : ''}`}
-                >
-                  <div
-                    className={`w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm shrink-0 ${
-                      i === 0 ? 'bg-blue-500 text-white' : i === 1 ? 'bg-slate-400 text-white' : i === 2 ? 'bg-amber-500 text-white' : 'bg-muted text-muted-foreground'
-                    }`}
-                  >
-                    {sheet.rank}
-                  </div>
-                  <div className="sm:text-center min-w-0">
-                    <p className="text-xs text-muted-foreground truncate">{sheet.brand}</p>
-                    <p className="text-xs font-medium text-foreground truncate leading-tight">{sheet.name.split('BODYGUARD')[0].trim() || sheet.name}</p>
-                    <div className="flex sm:justify-center items-center gap-1 mt-0.5">
-                      <Star className="w-3 h-3 fill-primary text-primary" />
-                      <span className="text-xs font-bold text-primary">{sheet.score.toFixed(1)}</span>
-                    </div>
-                  </div>
-                </a>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
+      
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
 
           {/* ─── How we test ──────────────────────────────────── */}
