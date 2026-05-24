@@ -46,7 +46,7 @@ export default function HomePage() {
             </h1>
             <p className="text-lg sm:text-xl text-muted-foreground mb-8 max-w-xl animate-fade-in stagger-2 text-pretty leading-relaxed">
               Przetestowaliśmy 10 materaców i 5 prześcieradeł dostępnych na polskim rynku.
-              Szczegółowe recenzje, oceny i porównania — bez sponsorowanych treści.
+              Szczegółowe recenzje, oceny i porównania.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in stagger-3">
               <Button asChild size="lg" className="text-base shadow-lg shadow-primary/25">
@@ -74,7 +74,7 @@ export default function HomePage() {
               </div>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Shield className="w-4 h-4 text-blue-600" />
-                <span>Bez sponsorowanych treści</span>
+                <span>Wybór redakcji</span>
               </div>
             </div>
           </div>

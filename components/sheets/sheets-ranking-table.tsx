@@ -154,7 +154,7 @@ export function SheetsRankingTable({ sheets }: SheetsRankingTableProps) {
                     <p className="text-sm text-muted-foreground line-clamp-2">{sheet.shortDescription}</p>
                   </div>
 
-                  {/* Key specs pills — desktop */}
+                  {/* Key specs pills - desktop */}
                   <div className="hidden xl:flex flex-col gap-2 shrink-0 min-w-[160px]">
                     <div className="flex items-center gap-2 text-xs text-muted-foreground">
                       <Thermometer className="w-3.5 h-3.5 shrink-0" />
@@ -293,7 +293,7 @@ export function SheetsRankingTable({ sheets }: SheetsRankingTableProps) {
                               </span>
                             ) : (
                               <span className="text-muted-foreground flex items-center gap-1 text-xs">
-                                — Nie
+                                - Nie
                               </span>
                             )}
                           </dd>

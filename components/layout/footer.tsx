@@ -49,7 +49,7 @@ export function Footer() {
   </Link>
 
   <p className="text-sm text-muted-foreground leading-relaxed">
-    Redakcja testująca produkty do sypialni — materace i pościel. Pomagamy wybrać najlepsze produkty do Twojego łóżka.
+    Redakcja testująca produkty do sypialni - materace i pościel. Pomagamy wybrać najlepsze produkty do Twojego łóżka.
   </p>
 </div>
 

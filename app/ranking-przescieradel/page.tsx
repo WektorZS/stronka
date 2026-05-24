@@ -188,7 +188,7 @@ export default function RankingPrzescieradelPage() {
           </div>
         </div>
 
-        {/* Hero visual strip — quick ranking summary */}
+        {/* Hero visual strip - quick ranking summary */}
         <div className="border-t border-border bg-card">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 sm:grid-cols-5 divide-y sm:divide-y-0 sm:divide-x divide-border">
@@ -233,7 +233,7 @@ export default function RankingPrzescieradelPage() {
             <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-3 mt-5">
               {[
                 { icon: Layers, label: 'Materiał', desc: 'Bawełna > Poliester' },
-                { icon: Layers, label: 'Gramatura', desc: 'g/m² — im więcej, tym lepiej' },
+                { icon: Layers, label: 'Gramatura', desc: 'g/m² - im więcej, tym lepiej' },
                 { icon: Thermometer, label: 'Temp. prania', desc: '60°C = eliminacja roztoczy' },
                 { icon: ShieldCheck, label: 'Antyalergiczne', desc: 'Oeko-Tex® + pranie 60°C' },
                 { icon: Scale, label: 'Cena', desc: 'Stosunek jakości do ceny' },
@@ -257,7 +257,7 @@ export default function RankingPrzescieradelPage() {
                   <p className="font-semibold text-foreground text-sm mb-1">bett1 BODYGUARD®</p>
                   <p className="text-xs text-muted-foreground leading-relaxed">
                     Najwyższa gramatura (240 g/m²), certyfikat Oeko-Tex®, pranie 60°C,
-                    96% bawełna — najlepszy dla alergików i wymagających.
+                    96% bawełna - najlepszy dla alergików i wymagających.
                   </p>
                 </CardContent>
               </Card>
@@ -292,7 +292,7 @@ export default function RankingPrzescieradelPage() {
     {/* Header */}
     <div className="max-w-3xl mb-10">
       <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-        Top 5 prześcieradeł — szczegółowe opisy
+        Top 5 prześcieradeł - szczegółowe opisy
       </h2>
       <p className="text-lg text-muted-foreground">
         Każde prześcieradło oceniliśmy według materiału, gramatury, temperatury prania,
@@ -444,10 +444,10 @@ export default function RankingPrzescieradelPage() {
               <div>
                 <h3 className="text-lg font-semibold text-foreground mb-2">Materiał: bawełna vs poliester</h3>
                 <p className="text-muted-foreground leading-relaxed text-sm mb-3">
-                  <strong className="text-foreground">Jersey</strong> to nie materiał, a technika tkania — może być wykonany z bawełny, poliestru
+                  <strong className="text-foreground">Jersey</strong> to nie materiał, a technika tkania - może być wykonany z bawełny, poliestru
                   lub wiskozy. Bawełna jerseyowa jest miękka, elastyczna i oddychająca. Pochłania wilgoć
                   (pot) i oddaje ją z powrotem, regulując temperaturę ciała podczas snu. Poliester (mikrofibra)
-                  jest tańszy w produkcji, ale gorzej oddycha — w ciepłe noce powoduje efekt &quot;folii&quot;.
+                  jest tańszy w produkcji, ale gorzej oddycha - w ciepłe noce powoduje efekt &quot;folii&quot;.
                   Generuje też ładunki elektrostatyczne, co może być uciążliwe.
                 </p>
                 <div className="grid sm:grid-cols-2 gap-3">
@@ -474,7 +474,7 @@ export default function RankingPrzescieradelPage() {
                 <p className="text-muted-foreground leading-relaxed text-sm">
                   Gramatura tkaniny (g/m²) opisuje ciężar jednego metra kwadratowego materiału. Im wyższa,
                   tym tkanina jest gęstsza, bardziej trwała i mniej podatna na mechacenie.
-                  W naszym teście najwyższą gramaturę ma bett1 BODYGUARD® (240 g/m²) — jest to blisko
+                  W naszym teście najwyższą gramaturę ma bett1 BODYGUARD® (240 g/m²) - jest to blisko
                   3-krotnie gęstszy materiał niż najtańsza opcja Terra Beds (90 g/m²). Prześcieradła
                   z gramaturą poniżej 120 g/m² są cienkie i szybko tracą kształt po praniu.
                 </p>
@@ -482,20 +482,20 @@ export default function RankingPrzescieradelPage() {
 
               {/* Temperatura prania */}
               <div>
-                <h3 className="text-lg font-semibold text-foreground mb-2">Temperatura prania — kluczowe dla alergików</h3>
+                <h3 className="text-lg font-semibold text-foreground mb-2">Temperatura prania - kluczowe dla alergików</h3>
                 <div className="flex items-start gap-3 p-4 rounded-lg bg-muted border border-border mb-3">
                   <Info className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                   <p className="text-sm text-muted-foreground">
                     Badania pokazują, że roztocza kurzu domowego i bakterie giną dopiero w temperaturze
                     <strong className="text-foreground"> 60°C</strong>. Pranie w 30°C lub 40°C
-                    nie zapewnia wystarczającej eliminacji alergenów — co jest szczególnie istotne
+                    nie zapewnia wystarczającej eliminacji alergenów - co jest szczególnie istotne
                     dla dzieci, astmatyków i alergików.
                   </p>
                 </div>
                 <p className="text-muted-foreground leading-relaxed text-sm">
                   Bawełna jest odporna na wysokie temperatury, co pozwala prać ją w 60°C lub nawet wyżej.
                   Poliester deformuje się powyżej 40°C, dlatego prześcieradła syntetyczne można prać
-                  maksymalnie w 40°C — co stanowi poważne ograniczenie higieniczne.
+                  maksymalnie w 40°C - co stanowi poważne ograniczenie higieniczne.
                 </p>
               </div>
 
@@ -505,7 +505,7 @@ export default function RankingPrzescieradelPage() {
                 <p className="text-muted-foreground leading-relaxed text-sm">
                   Certyfikat Oeko-Tex® Standard 100 potwierdza, że tkanina nie zawiera szkodliwych
                   substancji: pestycydów, metali ciężkich, formaldehydu ani środków wybielających.
-                  Jest to szczególnie ważne przy bezpośrednim kontakcie skóry z tkaniną — przez całą noc.
+                  Jest to szczególnie ważne przy bezpośrednim kontakcie skóry z tkaniną - przez całą noc.
                   W naszym teście certyfikat posiadają tylko bett1 BODYGUARD® i JYSK JENNY.
                 </p>
               </div>

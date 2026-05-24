@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    'Redakcja testująca produkty do sypialni — materace, prześcieradła i pościel. Sprawdź rankingi, recenzje i porównania najlepszych produktów na polskim rynku.',
+    'Redakcja testująca produkty do sypialni - materace, prześcieradła i pościel. Sprawdź rankingi, recenzje i porównania najlepszych produktów na polskim rynku.',
 
   keywords: [
     'materace',
@@ -75,7 +75,7 @@ export const metadata: Metadata = {
     title: 'Ranking Materaców i Pościeli 2026 | Testy i porównania',
 
     description:
-      'Redakcja testująca produkty do sypialni — materace, prześcieradła i pościel. Sprawdź rankingi najlepszych produktów w Polsce.',
+      'Redakcja testująca produkty do sypialni - materace, prześcieradła i pościel. Sprawdź rankingi najlepszych produktów w Polsce.',
 
     url: 'https://ranking-materacow.pl',
 
