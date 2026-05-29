@@ -56,8 +56,8 @@ export const sheets: Sheet[] = [
       'Dobra oddychalność',
     ],
     cons: [
-      'Wysoka cena',
       'Dostępność głównie online',
+      'Wysoka cena',
     ],
   },
 
@@ -93,6 +93,7 @@ export const sheets: Sheet[] = [
     cons: [
       'Wyższa cena niż modele budżetowe',
       'Nie jest to najwyższa gramatura materiału w rankingu',
+      'Wyższa cena na stronie producenta niż na Amazonie',
     ],
   },
 
