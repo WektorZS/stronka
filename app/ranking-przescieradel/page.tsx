@@ -483,10 +483,9 @@ export default function RankingPrzescieradelPage() {
                 <h3 className="text-lg font-semibold text-foreground mb-2">Gramatura: im więcej, tym lepiej</h3>
                 <p className="text-muted-foreground leading-relaxed text-sm">
                   Gramatura tkaniny (g/m²) opisuje ciężar jednego metra kwadratowego materiału. Im wyższa,
-                  tym tkanina jest gęstsza, bardziej trwała i mniej podatna na mechacenie.
-                  W naszym teście najwyższą gramaturę ma bett1 BODYGUARD® (240 g/m²) - jest to blisko
-                  3-krotnie gęstszy materiał niż najtańsza opcja Terra Beds (90 g/m²). Prześcieradła
-                  z gramaturą poniżej 120 g/m² są cienkie i szybko tracą kształt po praniu.
+                  tym tkanina jest gęstsza, bardziej trwała, mniej podatna na mechacenie i rozciąganie się w praniu.
+                  W naszym teście najwyższą gramaturę ma bett1 BODYGUARD (240 g/m²) choć wiąże się to z wyższą ceną. Prześcieradła
+                  z gramaturą poniżej 140 g/m² są dość cienkie i szybko tracą kształt po praniu.
                 </p>
               </div>
 
@@ -503,7 +502,7 @@ export default function RankingPrzescieradelPage() {
                   </p>
                 </div>
                 <p className="text-muted-foreground leading-relaxed text-sm">
-                  Bawełna jest odporna na wysokie temperatury, co pozwala prać ją w 60°C lub nawet wyżej.
+                  Bawełna jest odporna na wysokie temperatury, co pozwala prać ją w 60°C lub nawet wyżej w przypadku produktów niefarbowanych.
                   Poliester deformuje się powyżej 40°C, dlatego prześcieradła syntetyczne można prać
                   maksymalnie w 40°C - co stanowi poważne ograniczenie higieniczne.
                 </p>
@@ -516,7 +515,7 @@ export default function RankingPrzescieradelPage() {
                   Certyfikat Oeko-Tex® Standard 100 potwierdza, że tkanina nie zawiera szkodliwych
                   substancji: pestycydów, metali ciężkich, formaldehydu ani środków wybielających.
                   Jest to szczególnie ważne przy bezpośrednim kontakcie skóry z tkaniną - przez całą noc.
-                  W naszym teście certyfikat posiadają tylko bett1 BODYGUARD® i JYSK JENNY.
+                  W naszym teście certyfikat ten odgrywa dużą rolę przy ocenie antyalergiczności.
                 </p>
               </div>
             </div>
