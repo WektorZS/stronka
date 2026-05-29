@@ -14,7 +14,6 @@ import {
   Star,
   Calendar,
   User,
-  MapPinned,
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
@@ -145,8 +144,9 @@ function CountryBadge({ country }: { country: string }) {
 
   return (
     <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-semibold border bg-slate-100 text-slate-700 border-slate-200">
-      <MapPinned className="w-3 h-3" />
-      {flag} {country}
+      <span>Produkcja: </span>
+      <span>{flag}</span>
+      <span>{country}</span>
     </span>
   )
 }
