@@ -14,6 +14,7 @@ import {
   Star,
   Calendar,
   User,
+  ArrowRight,
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
@@ -283,6 +284,23 @@ export default function RankingPrzescieradelPage() {
                 </div>
               ))}
             </div>
+            <div className="mt-6 p-4 rounded-xl border bg-blue-50/50 border-blue-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+  <div>
+    <p className="font-semibold text-foreground text-sm">
+      Chcesz wiedzieć jak dokładnie testujemy?
+    </p>
+    <p className="text-xs text-muted-foreground">
+      Zobacz pełną metodologię, kryteria i sposób punktacji
+    </p>
+  </div>
+
+  <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white shrink-0">
+    <Link href="/metodologia">
+      Metodologia testów
+      <ArrowRight className="ml-2 h-4 w-4" />
+    </Link>
+  </Button>
+</div>
           </section>
 
          {/* ─── Summary verdict ──────────────────────────────── */}
@@ -305,7 +323,7 @@ export default function RankingPrzescieradelPage() {
         <Badge className="bg-amber-500 text-white border-0 mb-3">Niezła jakość w niezłej cenie</Badge>
         <p className="font-semibold text-foreground text-sm mb-1">SCHÖNER WOHNEN Jersey</p>
         <p className="text-xs text-muted-foreground leading-relaxed">
-          180 g/m², 95% bawełna, pranie 60°C i Oeko-Tex®. Bardzo dobry kompromis jakości, elastyczności i ceny.
+          Gramatura 180 g/m², 95% bawełna, pranie 60°C i Oeko-Tex®. Bardzo dobry kompromis jakości, elastyczności i ceny.
         </p>
       </CardContent>
     </Card>
@@ -315,7 +333,7 @@ export default function RankingPrzescieradelPage() {
         <Badge className="bg-slate-500 text-white border-0 mb-3">Opcja budżetowa</Badge>
         <p className="font-semibold text-foreground text-sm mb-1">JYSK JENNY</p>
         <p className="text-xs text-muted-foreground leading-relaxed">
-          130 g/m², 100% bawełna i pranie 60°C. Niska cena, dobra higiena, ale słabsza trwałość niż top modele.
+          Gramatura 130 g/m², 100% bawełna i pranie 60°C. Niska cena, dobra higiena, ale słabsza trwałość.
         </p>
       </CardContent>
     </Card>
