@@ -14,6 +14,7 @@ import {
   Star,
   Calendar,
   User,
+  MapPinned,
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
@@ -120,6 +121,34 @@ function GramScore({ g }: { g: number }) {
   const cls =
     g >= 200 ? 'text-blue-700 font-bold' : g >= 130 ? 'text-amber-700 font-semibold' : 'text-red-700 font-semibold'
   return <span className={cls}>{g} g/m²</span>
+}
+
+function CountryBadge({ country }: { country: string }) {
+  const flags: Record<string, string> = {
+    Niemcy: '🇩🇪',
+    Polska: '🇵🇱',
+    Pakistan: '🇵🇰',
+    Chiny: '🇨🇳',
+    Turcja: '🇹🇷',
+    Indie: '🇮🇳',
+    Portugalia: '🇵🇹',
+    Włochy: '🇮🇹',
+    Dania: '🇩🇰',
+    Szwecja: '🇸🇪',
+    Francja: '🇫🇷',
+    Czechy: '🇨🇿',
+    Rumunia: '🇷🇴',
+    brak: '🌍',
+  }
+
+  const flag = flags[country] || '🌍'
+
+  return (
+    <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-semibold border bg-slate-100 text-slate-700 border-slate-200">
+      <MapPinned className="w-3 h-3" />
+      {flag} {country}
+    </span>
+  )
 }
 
 export default function RankingPrzescieradelPage() {
@@ -346,9 +375,17 @@ export default function RankingPrzescieradelPage() {
     </Badge>
   )}
 
-  <Badge className="bg-slate-100 text-slate-700 border-0">
-    Produkcja: {sheet.country}
-  </Badge>
+  <Badge
+  className={
+    ['Polska', 'Niemcy', 'Dania'].includes(sheet.country)
+      ? 'bg-emerald-100 text-emerald-700 border-0'
+      : sheet.country === 'Chiny'
+        ? 'bg-orange-100 text-orange-700 border-0'
+        : 'bg-slate-100 text-slate-700 border-0'
+  }
+>
+  Produkcja: {sheet.country}
+</Badge>
 </div>
 
               {/* short */}
