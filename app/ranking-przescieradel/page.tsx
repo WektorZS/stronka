@@ -21,9 +21,9 @@ import { Card, CardContent } from '@/components/ui/card'
 import { getSheetsByRank } from '@/lib/sheets'
 
 export const metadata: Metadata = {
-  title: 'Ranking prześcieradeł 2026 - Top 5 | Bawełna vs Poliester',
+  title: 'Ranking prześcieradeł 2026 - Top 10 | Bawełna vs Poliester',
   description:
-    'Ranking Top 5 prześcieradeł z gumką 90x200 cm. Porównanie bawełny i poliestru: gramatura, temperatura prania, antyalergiczność, cena. Sprawdź, które prześcieradło wybrać.',
+    'Ranking Top 10 prześcieradeł z gumką 90x200 cm. Porównanie bawełny i poliestru: gramatura, temperatura prania, antyalergiczność, cena. Sprawdź, które prześcieradło wybrać.',
   keywords: [
     'ranking prześcieradeł',
     'ranking prześcieradeł 2026',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: '/ranking-przescieradel' },
   openGraph: {
-    title: 'Ranking prześcieradeł 2026 - Top 5 | Bawełna vs Poliester',
+    title: 'Ranking prześcieradeł 2026 - Top 10 | Bawełna vs Poliester',
     description:
       'Porównanie 5 prześcieradeł z gumką 90x200: gramatura, materiał, temperatura prania, antyalergiczność i cena.',
     url: 'https://ranking-materacow.pl/ranking-przescieradel',
@@ -50,10 +50,26 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
     {
+      '@type': 'WebPage',
+      '@id': 'https://ranking-materacow.pl/ranking-przescieradel',
+      url: 'https://ranking-materacow.pl/ranking-przescieradel',
+      name: 'Ranking prześcieradeł 2026',
+    },
+    {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Strona główna', item: 'https://ranking-materacow.pl' },
-        { '@type': 'ListItem', position: 2, name: 'Rankingi', item: 'https://ranking-materacow.pl/ranking' },
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Strona główna',
+          item: 'https://ranking-materacow.pl',
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: 'Rankingi',
+          item: 'https://ranking-materacow.pl/ranking',
+        },
         {
           '@type': 'ListItem',
           position: 3,
@@ -63,26 +79,47 @@ const jsonLd = {
       ],
     },
     {
-      '@type': 'Article',
-      headline: 'Ranking prześcieradeł 2026 - Top 5 Bawełna vs Poliester',
-      description:
-        'Porównanie 5 najpopularniejszych prześcieradeł z gumką 90x200 cm dostępnych w Polsce. Sprawdzamy materiał, gramaturę, temperaturę prania, certyfikaty i ceny.',
-      datePublished: '2026-05-22',
-      dateModified: '2026-05-22',
-      author: { '@type': 'Organization', name: 'Redakcja Ranking-Materacow.pl' },
-      publisher: { '@type': 'Organization', name: 'Ranking-Materacow.pl', url: 'https://ranking-materacow.pl' },
+      '@type': 'ItemList',
+      '@id': 'https://ranking-materacow.pl/ranking-przescieradel#itemlist',
+      name: 'Ranking prześcieradeł 2026 - Top 10',
+      numberOfItems: 10,
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Jersey z gumką BODYGUARD®', item: 'https://www.bett1.pl/produkty/przescieradlo-jersey-z-gumka-bodyguard-90-100x200-biale' },
+        { '@type': 'ListItem', position: 2, name: 'Jersey SCHÖNER WOHNEN', item: 'https://www.amazon.pl/SCHÖNER-WOHNEN-prześcieradlo-Zielone-100x200/dp/B0F8P1PJ25/ref=sr_1_2' },
+        { '@type': 'ListItem', position: 3, name: 'Prześcieradło jersey Biberna', item: 'https://www.lidl.pl/p/biberna-przescieradlo-z-dzerseju-rozne-rozmiary/p100251944' },
+        { '@type': 'ListItem', position: 4, name: 'Jersey z gumką JENNY', item: 'https://jysk.pl/sypialnia/przescieradla/przescieradla-frotte-i-dzersej/przescieradlo-dzersej-z-gumka-jenny-0' },
+        { '@type': 'ListItem', position: 5, name: 'Prześcieradło jersey Eurofirany', item: 'https://www.eurofirany.com.pl/przescieradlo-jersey-z-gumka-90x200-cm-z-bawelny-kolor-jasnoszary-140-g-m2-id-79801' },
+        { '@type': 'ListItem', position: 6, name: 'Prześcieradło bambusowe Bambaw', item: 'https://www.amazon.pl/Bambaw-Prześcieradlo-odświeżające-prześcieradlo-jednoosobowe/dp/B0C6R1LN1W/ref=sr_1_46' },
+        { '@type': 'ListItem', position: 7, name: 'Nexa z gumką (Pation Home)', item: 'https://home.biedronka.pl/pation-home-przescieradlo-z-gumka-90-x-200-cm-pation-home-nexa-jasnoszare-000000000000744193.html' },
+        { '@type': 'ListItem', position: 8, name: 'Cashmere Touch MALIKA®', item: 'https://www.amazon.pl/Przytulne-prześcieradlo-Cashmere-Touch-dżerseju-polarowe/dp/B07H8P8FR2/ref=sr_1_24' },
+        { '@type': 'ListItem', position: 9, name: 'MAGANO® jersey', item: 'https://www.amazon.pl/MAGANO®-Prześcieradlo-prasowania-hipoalergiczne-oddychające/dp/B0BYXKDC7Z/ref=sr_1_12' },
+        { '@type': 'ListItem', position: 10, name: 'Micros z gumką (home&you)', item: 'https://home-you.com/pl/p/przescieradlo-z-mikrofibry-z-gumka-micros-90x200-cm-1000024553' },
+      ],
     },
     {
-      '@type': 'ItemList',
-      name: 'Ranking prześcieradeł 2026 - Top 5',
-      numberOfItems: 5,
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'bett1 Jersey z gumką BODYGUARD®', url: 'https://www.bett1.pl/produkty/przescieradlo-jersey-z-gumka-bodyguard-90-100x200-biale' },
-        { '@type': 'ListItem', position: 2, name: 'JYSK Jersey z gumką JENNY', url: 'https://jysk.pl/sypialnia/przescieradla' },
-        { '@type': 'ListItem', position: 3, name: 'Pation Home Nexa z gumką', url: 'https://home.biedronka.pl' },
-        { '@type': 'ListItem', position: 4, name: 'home&you Micros z gumką', url: 'https://home-you.com' },
-        { '@type': 'ListItem', position: 5, name: 'Terra Beds prześcieradło mikrofibra', url: 'https://www.amazon.pl' },
-      ],
+      '@type': 'Article',
+      '@id': 'https://ranking-materacow.pl/ranking-przescieradel#article',
+      headline: 'Ranking prześcieradeł 2026 - Top 10 Bawełna vs Poliester',
+      description:
+        'Porównanie prześcieradeł z gumką 90x200 cm dostępnych w Polsce.',
+      url: 'https://ranking-materacow.pl/ranking-przescieradel',
+      datePublished: '2026-05-22',
+      dateModified: '2026-05-22',
+      mainEntityOfPage: {
+        '@id': 'https://ranking-materacow.pl/ranking-przescieradel',
+      },
+      author: {
+        '@type': 'Organization',
+        name: 'Redakcja Ranking-Materacow.pl',
+      },
+      publisher: {
+        '@type': 'Organization',
+        name: 'Ranking-Materacow.pl',
+        url: 'https://ranking-materacow.pl',
+      },
+      mainEntity: {
+        '@id': 'https://ranking-materacow.pl/ranking-przescieradel#itemlist',
+      },
     },
   ],
 }
@@ -137,16 +174,18 @@ function CountryBadge({ country }: { country: string }) {
     Francja: '🇫🇷',
     Czechy: '🇨🇿',
     Rumunia: '🇷🇴',
-    brak: '🌍',
   }
 
+  const isUnknown = !flags[country]
+
   const flag = flags[country] || '🌍'
+  const label = isUnknown ? 'Brak danych' : country
 
   return (
     <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-semibold border bg-slate-100 text-slate-700 border-slate-200">
       <span>Produkcja</span>
       <span>{flag}</span>
-      <span>{country}</span>
+      <span>{label}</span>
     </span>
   )
 }
@@ -225,7 +264,7 @@ export default function RankingPrzescieradelPage() {
           <section className="my-12">
             <h2 className="text-2xl font-bold text-foreground mb-4">Jak testujemy prześcieradła?</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Każde prześcieradło oceniamy według 5 obiektywnych kryteriów, które mają realny wpływ
+              Każde prześcieradło oceniamy według 5 kryteriów, które mają realny wpływ
               na komfort i higienę snu. Nie uwzględniamy subiektywnych cech wizualnych ani wzornictwa,
               skupiamy się wyłącznie na parametrach technicznych i dostępnych danych producentów.
             </p>
