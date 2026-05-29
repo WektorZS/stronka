@@ -14,8 +14,8 @@ export interface Sheet {
   verdict: string
   material: string
   materialType: MaterialType
-  gramatura: number | null
-  washTemp: number | null
+  gramatura: number
+  washTemp: number
   hypoallergenic: boolean
   oekotex: boolean
   elastan: boolean
