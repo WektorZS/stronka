@@ -375,17 +375,8 @@ export default function RankingPrzescieradelPage() {
     </Badge>
   )}
 
-  <Badge
-  className={
-    ['Polska', 'Niemcy', 'Dania'].includes(sheet.country)
-      ? 'bg-emerald-100 text-emerald-700 border-0'
-      : sheet.country === 'Chiny'
-        ? 'bg-orange-100 text-orange-700 border-0'
-        : 'bg-slate-100 text-slate-700 border-0'
-  }
->
-  Produkcja: {sheet.country}
-</Badge>
+<CountryBadge country={sheet.country} />
+
 </div>
 
               {/* short */}
