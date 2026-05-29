@@ -174,7 +174,7 @@ export const sheets: Sheet[] = [
     brand: 'Eurofirany',
     price: 75,
     url: 'https://www.eurofirany.com.pl/przescieradlo-jersey-z-gumka-90x200-cm-z-bawelny-kolor-jasnoszary-140-g-m2-id-79801',
-    image: '/images/sheets/terra-beds-mikrofibra.jpg',
+    image: '/images/sheets/eurofirany-jersey.jpg',
     score: 7.3,
     shortDescription:
       'Prześcieradło bawełniane polskiej produkcji.',
@@ -278,7 +278,7 @@ export const sheets: Sheet[] = [
     brand: 'MALIKA®',
     price: 105,
     url: 'https://www.amazon.pl/Przytulne-prześcieradlo-Cashmere-Touch-dżerseju-polarowe/dp/B07H8P8FR2/ref=sr_1_24',
-    image: '/images/sheets/cashmere-touch.jpg',
+    image: '/images/sheets/cashmere-touch-malika.jpg',
     score: 4.8,
     shortDescription:
       'Bardzo miękkie i ciepłe prześcieradło o syntetycznym charakterze.',
@@ -372,7 +372,7 @@ export const sheets: Sheet[] = [
       'Słaba oddychalność',
       'Gromadzi ładunki elektrostatyczne',
       'Niższy komfort snu',
-      'Brak certyfikatów i informacji o kraju produkcji',
+      'Brak certyfikatów i informacji o kraju produkcji na stronie producenta',
     ],
   },
 ]

@@ -472,7 +472,7 @@ export default function RankingPrzescieradelPage() {
                     <X className="w-4 h-4 text-slate-500 shrink-0 mt-0.5" />
                     <div>
                       <p className="text-sm font-semibold text-slate-700">Poliester</p>
-                      <p className="text-xs text-slate-600">Słabo oddycha, efekt statyczny, gorsza higieniczność, niezalecany dla alergików</p>
+                      <p className="text-xs text-slate-600">Słabo oddycha, elektryzuje się, gorsza higiena, raczej gorszy wybór dla alergików</p>
                     </div>
                   </div>
                 </div>
