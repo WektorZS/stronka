@@ -14,11 +14,12 @@ export interface Sheet {
   verdict: string
   material: string
   materialType: MaterialType
-  gramatura: number // g/m² - for all products
-  washTemp: number // °C
+  gramatura: number | null
+  washTemp: number | null
   hypoallergenic: boolean
   oekotex: boolean
   elastan: boolean
+  country: string
   pros: string[]
   cons: string[]
 }
@@ -33,9 +34,11 @@ export const sheets: Sheet[] = [
     price: 149,
     url: 'https://www.bett1.pl/produkty/przescieradlo-jersey-z-gumka-bodyguard-90-100x200-biale',
     image: '/images/sheets/bett1-bodyguard-jersey.jpg',
-    score: 9.4,
-    shortDescription: 'Premium bawełna jersey 240 g/m² z certyfikatem Oeko-Tex®. Najwyższa gramatura i temp. prania 60°C w teście.',
-    verdict: 'Najlepszy wybór: najwyższa gramatura, certyfikat Oeko-Tex®, pranie 60°C i naturalny skład 96% bawełna + 4% elastan.',
+    score: 9.5,
+    shortDescription:
+      'Najwyższa gramatura w rankingu: 240 g/m², pranie 60°C i certyfikat Oeko-Tex®.',
+    verdict:
+      'Najbardziej kompletne prześcieradło w rankingu. Bardzo wysoka gramatura, wysoka zawartość bawełny i możliwość prania w 60°C zapewniają bardzo dobrą trwałość oraz higienę użytkowania.',
     material: '96% bawełna, 4% elastan',
     materialType: 'cotton',
     gramatura: 240,
@@ -43,31 +46,70 @@ export const sheets: Sheet[] = [
     hypoallergenic: true,
     oekotex: true,
     elastan: true,
+    country: 'Brak danych',
     pros: [
-      'Najwyższa gramatura w teście: 240 g/m²',
-      'Certyfikat Oeko-Tex® Standard 100 - brak szkodliwych substancji',
-      'Pranie do 60°C - eliminuje roztocza i bakterie',
-      '96% bawełna jersey - miękka, oddychająca, naturalna',
-      'Dopasowuje się do materacy do 22 cm wysokości',
-      'Dostępne w dwóch eleganckich kolorach: biały i srebrny',
+      'Najwyższa gramatura w rankingu: 240 g/m²',
+      'Pranie do 60°C',
+      'Certyfikat Oeko-Tex® Standard 100',
+      'Bardzo dobra trwałość materiału',
+      'Elastan poprawia dopasowanie do materaca',
+      'Dobra oddychalność',
     ],
     cons: [
-      'Wyższa cena niż syntetyczne alternatywy',
-      'Dostępny głównie online (bett1.pl lub Amazon.pl)',
+      'Wysoka cena',
+      'Dostępność głównie online',
     ],
   },
+
+  {
+    id: 'schoner-wohnen-jersey',
+    slug: 'schoner-wohnen-jersey',
+    rank: 2,
+    name: 'Jersey SCHÖNER WOHNEN',
+    brand: 'SCHÖNER WOHNEN',
+    price: 89,
+    url: 'https://www.amazon.pl/SCHÖNER-WOHNEN-prześcieradlo-Zielone-100x200/dp/B0F8P1PJ25/ref=sr_1_2',
+    image: '/images/sheets/schoner-wohnen-jersey.jpg',
+    score: 8.4,
+    shortDescription:
+      'Dobre jakościowo prześcieradło jersey z wyższej półki niż typowe modele marketplace.',
+    verdict:
+      'Solidne prześcieradło z dobrą elastycznością, komfortem użytkowania i lepszą jakością wykonania niż większość tanich modeli jersey.',
+    material: 'Bawełna z dodatkiem elastanu',
+    materialType: 'blend',
+    gramatura: 180,
+    washTemp: 60,
+    hypoallergenic: true,
+    oekotex: true,
+    elastan: true,
+    country: 'Brak danych',
+    pros: [
+      'Dobra jakość wykonania',
+      'Pranie do 60°C',
+      'Certyfikat Oeko-Tex®',
+      'Elastyczne i dobrze dopasowane',
+      'Lepsza trwałość niż tanie modele marketowe',
+    ],
+    cons: [
+      'Wyższa cena niż modele budżetowe',
+      'Niższa gramatura niż lider rankingu',
+    ],
+  },
+
   {
     id: 'jysk-jenny-jersey',
     slug: 'jysk-jenny-jersey',
-    rank: 2,
+    rank: 3,
     name: 'Jersey z gumką JENNY',
     brand: 'JYSK',
-    price: 32.50,
+    price: 35,
     url: 'https://jysk.pl/sypialnia/przescieradla/przescieradla-frotte-i-dzersej/przescieradlo-dzersej-z-gumka-jenny-0',
     image: '/images/sheets/jysk-jenny-jersey.jpg',
-    score: 6.8,
-    shortDescription: 'Bawełniane prześcieradło JYSK w dobrej cenie, ale niska gramatura 130 g/m² wpływa na trwałość.',
-    verdict: 'Dobra cena i certyfikat Oeko-Tex®, lecz gramatura 130 g/m² jest prawie dwukrotnie niższa niż lidera.',
+    score: 7.9,
+    shortDescription:
+      'Bardzo dobra relacja ceny do jakości. 100% bawełna, Oeko-Tex® i pranie 60°C.',
+    verdict:
+      'Jeden z najlepszych budżetowych modeli w rankingu. Niska gramatura ogranicza trwałość, ale dobra higiena użytkowania i certyfikat Oeko-Tex® mocno poprawiają ocenę.',
     material: '100% bawełna',
     materialType: 'cotton',
     gramatura: 130,
@@ -75,31 +117,142 @@ export const sheets: Sheet[] = [
     hypoallergenic: true,
     oekotex: true,
     elastan: false,
+    country: 'Brak danych',
     pros: [
-      'Niska cena - 32,50 zł za rozmiar 90x200',
-      'Certyfikat Oeko-Tex® Standard 100',
-      '100% bawełna - naturalny skład',
+      'Bardzo dobra cena',
+      '100% bawełna',
       'Pranie do 60°C',
-      'Szeroka dostępność w sieci sklepów JYSK',
+      'Certyfikat Oeko-Tex®',
+      'Dobra dostępność',
     ],
     cons: [
-      'Niska gramatura 130 g/m² - cienki materiał, mniej trwały',
-      'Brak elastanu - może słabiej przylegać do materaca',
-      'Brak informacji o dopasowaniu do wysokości materaca',
+      'Dość niska gramatura',
+      'Brak elastanu',
+      'Niższa trwałość przy częstym praniu',
     ],
   },
+
+  {
+    id: 'biberna-jersey-lidl',
+    slug: 'biberna-jersey-lidl',
+    rank: 4,
+    name: 'Prześcieradło jersey Biberna',
+    brand: 'Biberna (Lidl)',
+    price: 49.99,
+    url: 'https://www.lidl.pl/p/biberna-przescieradlo-z-dzerseju-rozne-rozmiary/p100251944',
+    image: '/images/sheets/biberna-jersey-lidl.jpg',
+    score: 7.5,
+    shortDescription:
+      'Solidne prześcieradło jersey z dobrą relacją ceny do jakości.',
+    verdict:
+      'Lepszy wybór niż większość tanich modeli marketplace. Dobra higiena użytkowania dzięki praniu 60°C i certyfikatowi Oeko-Tex®.',
+    material: '100% bawełna jersey',
+    materialType: 'cotton',
+    gramatura: 140,
+    washTemp: 60,
+    hypoallergenic: true,
+    oekotex: true,
+    elastan: false,
+    country: 'Brak danych',
+    pros: [
+      '100% bawełna',
+      'Pranie do 60°C',
+      'Certyfikat Oeko-Tex®',
+      'Dobra cena',
+      'Przyjemny materiał',
+    ],
+    cons: [
+      'Brak elastanu',
+      'Średnia trwałość materiału',
+      'Mniej komfortowe niż modele premium',
+    ],
+  },
+
+  {
+    id: 'bambaw-bambusowe',
+    slug: 'bambaw-bambusowe',
+    rank: 5,
+    name: 'Prześcieradło bambusowe',
+    brand: 'Bambaw',
+    price: 119,
+    url: 'https://www.amazon.pl/Bambaw-Prześcieradlo-odświeżające-prześcieradlo-jednoosobowe/dp/B0C6R1LN1W/ref=sr_1_46',
+    image: '/images/sheets/bambaw-bambusowe.jpg',
+    score: 7.1,
+    shortDescription:
+      'Miękkie i chłodne prześcieradło bambusowe dobrze odprowadzające wilgoć.',
+    verdict:
+      'Dobry wybór dla osób przegrzewających się podczas snu. Komfort termiczny stoi na wysokim poziomie, ale trwałość zwykle ustępuje najlepszym modelom bawełnianym.',
+    material: '100% wiskoza bambusowa',
+    materialType: 'blend',
+    gramatura: 170,
+    washTemp: 40,
+    hypoallergenic: true,
+    oekotex: true,
+    elastan: false,
+    country: 'Brak danych',
+    pros: [
+      'Bardzo dobra oddychalność',
+      'Dobrze odprowadza wilgoć',
+      'Miękkie i chłodne w dotyku',
+      'Dobry komfort termiczny',
+      'Certyfikat Oeko-Tex®',
+    ],
+    cons: [
+      'Pranie tylko do 40°C',
+      'Niższa trwałość niż najlepsze modele bawełniane',
+      'Wysoka cena względem parametrów',
+    ],
+  },
+
+  {
+    id: 'magano-jersey',
+    slug: 'magano-jersey',
+    rank: 6,
+    name: 'Prześcieradło jersey MAGANO®',
+    brand: 'MAGANO',
+    price: 69,
+    url: 'https://www.amazon.pl/MAGANO®-Prześcieradlo-prasowania-hipoalergiczne-oddychające/dp/B0BYXKDC7Z/ref=sr_1_12',
+    image: '/images/sheets/magano-jersey.jpg',
+    score: 6.5,
+    shortDescription:
+      'Elastyczne prześcieradło jersey z dodatkiem syntetyków.',
+    verdict:
+      'Praktyczne w codziennym użytkowaniu i łatwe w pielęgnacji, ale domieszka poliestru pogarsza oddychalność względem dobrej jakości bawełny.',
+    material: 'Bawełna i poliester',
+    materialType: 'blend',
+    gramatura: 150,
+    washTemp: 40,
+    hypoallergenic: false,
+    oekotex: false,
+    elastan: true,
+    country: 'Brak danych',
+    pros: [
+      'Dobrze dopasowuje się do materaca',
+      'Nie wymaga prasowania',
+      'Miękkie w dotyku',
+      'Przyzwoita cena',
+    ],
+    cons: [
+      'Domieszka poliestru pogarsza oddychalność',
+      'Brak Oeko-Tex®',
+      'Pranie tylko do 40°C',
+    ],
+  },
+
   {
     id: 'biedronka-pation-nexa',
     slug: 'biedronka-pation-nexa',
-    rank: 3,
+    rank: 7,
     name: 'Nexa z gumką',
     brand: 'Pation Home (Biedronka)',
-    price: 79.90,
+    price: 79.9,
     url: 'https://home.biedronka.pl/pation-home-przescieradlo-z-gumka-90-x-200-cm-pation-home-nexa-jasnoszare-000000000000744193.html',
     image: '/images/sheets/biedronka-pation-nexa.jpg',
-    score: 5.5,
-    shortDescription: 'Bawełna 100%, ale ograniczona temperatura prania do 30°C to poważna wada dla alergików.',
-    verdict: 'Naturalny skład z bawełny, ale pranie tylko 30°C znacznie ogranicza skuteczność higienizacji - duży minus dla alergików.',
+    score: 5.9,
+    shortDescription:
+      'Bawełniane prześcieradło z ograniczoną higieną użytkowania przez pranie tylko w 30°C.',
+    verdict:
+      'Naturalna bawełna jest plusem, ale pranie tylko w 30°C znacząco obniża ocenę pod względem higieny i użyteczności dla alergików.',
     material: '100% bawełna',
     materialType: 'cotton',
     gramatura: 140,
@@ -107,30 +260,69 @@ export const sheets: Sheet[] = [
     hypoallergenic: false,
     oekotex: false,
     elastan: false,
+    country: 'Brak danych',
     pros: [
-      '100% bawełna - naturalny skład',
-      'Gramatura 140 g/m² - nieco lepsza niż JYSK',
-      'Szeroka dostępność w sklepach Biedronka',
+      '100% bawełna',
+      'Przyjemne w dotyku',
+      'Łatwa dostępność',
     ],
     cons: [
-      'Pranie maksymalnie 30°C - nie eliminuje skutecznie roztoczy i bakterii',
-      'Brak certyfikatu Oeko-Tex® - nieznana zawartość substancji chemicznych',
-      'Nie zalecana dla alergików z uwagi na niską temp. prania',
-      'Brak informacji o wysokości dopasowania do materaca',
+      'Pranie tylko 30°C',
+      'Brak certyfikatów',
+      'Brak elastanu',
+      'Słabsza higiena użytkowania',
     ],
   },
+
+  {
+    id: 'cashmere-touch-polarowe',
+    slug: 'cashmere-touch-polarowe',
+    rank: 8,
+    name: 'Cashmere Touch',
+    brand: 'Przytulne',
+    price: 59,
+    url: 'https://www.amazon.pl/Przytulne-prześcieradlo-Cashmere-Touch-dżerseju-polarowe/dp/B07H8P8FR2/ref=sr_1_24',
+    image: '/images/sheets/cashmere-touch.jpg',
+    score: 5.2,
+    shortDescription:
+      'Bardzo miękkie i ciepłe prześcieradło o syntetycznym charakterze.',
+    verdict:
+      'Model nastawiony głównie na efekt miękkości i ciepła. Komfort termiczny zimą jest dobry, ale oddychalność wyraźnie słabsza niż w prześcieradłach bawełnianych.',
+    material: 'Mikrofibra / poliester',
+    materialType: 'polyester',
+    gramatura: 160,
+    washTemp: 40,
+    hypoallergenic: false,
+    oekotex: false,
+    elastan: true,
+    country: 'Brak danych',
+    pros: [
+      'Bardzo miękkie',
+      'Ciepłe zimą',
+      'Nie wymaga prasowania',
+    ],
+    cons: [
+      'Słaba oddychalność',
+      'Może powodować przegrzewanie',
+      'Materiał syntetyczny',
+      'Słabszy komfort latem',
+    ],
+  },
+
   {
     id: 'home-you-micros-mikrofibra',
     slug: 'home-you-micros-mikrofibra',
-    rank: 4,
+    rank: 9,
     name: 'Micros z gumką (mikrofibra)',
     brand: 'home&you',
     price: 39.99,
     url: 'https://home-you.com/pl/p/przescieradlo-z-mikrofibry-z-gumka-micros-90x200-cm-1000024553',
     image: '/images/sheets/home-you-micros-mikrofibra.jpg',
-    score: 4.2,
-    shortDescription: 'Tanie prześcieradło z mikrofibry (100% poliester). Słabo oddycha i może gromadzić ładunki elektrostatyczne.',
-    verdict: 'Poliester jest gorszym materiałem niż bawełna: słabsza oddychalność, efekt statyczny, niezalecany dla alergików.',
+    score: 4.3,
+    shortDescription:
+      'Budżetowe prześcieradło z mikrofibry o słabej przewiewności.',
+    verdict:
+      'Typowy tani model poliestrowy. Komfort termiczny i oddychalność są wyraźnie słabsze niż w prześcieradłach bawełnianych.',
     material: '100% poliester (mikrofibra)',
     materialType: 'polyester',
     gramatura: 120,
@@ -138,31 +330,34 @@ export const sheets: Sheet[] = [
     hypoallergenic: false,
     oekotex: false,
     elastan: false,
+    country: 'Brak danych',
     pros: [
-      'Niska cena - 39,99 zł',
-      'Pranie do 40°C',
-      'Szeroka dostępność w sieci home&you',
+      'Niska cena',
+      'Miękkie w dotyku',
+      'Łatwe w pielęgnacji',
     ],
     cons: [
-      '100% poliester - syntetyczny materiał, gorsze oddychanie nocne',
-      'Niska gramatura 120 g/m² - najcieńszy produkt w teście',
+      'Słaba oddychalność',
       'Gromadzi ładunki elektrostatyczne',
-      'Brak certyfikatu Oeko-Tex®',
-      'Nie zalecany dla alergików i osób pocących się w nocy',
+      'Niższy komfort snu',
+      'Brak certyfikatów',
     ],
   },
+
   {
     id: 'terra-beds-mikrofibra',
     slug: 'terra-beds-mikrofibra',
-    rank: 5,
+    rank: 10,
     name: 'Prześcieradło mikrofibra z gumką',
     brand: 'Terra Beds (Amazon)',
     price: 28.88,
     url: 'https://www.amazon.pl/s?k=prześcieradło+mikrofibra+z+gumką+90x200',
     image: '/images/sheets/terra-beds-mikrofibra.jpg',
     score: 3.5,
-    shortDescription: 'Najtańsza opcja w teście - 100% poliester, pranie tylko 30°C. Wyłącznie dla osób szukających najtańszej opcji.',
-    verdict: 'Najniższa cena w teście, ale poliester + pranie 30°C + brak certyfikatów sprawia, że to opcja wyłącznie budżetowa.',
+    shortDescription:
+      'Najtańszy model w rankingu wykonany z cienkiej mikrofibry.',
+    verdict:
+      'Opcja wyłącznie budżetowa. Bardzo niska gramatura, poliester i pranie tylko 30°C znacząco obniżają komfort oraz trwałość.',
     material: '100% poliester (mikrofibra)',
     materialType: 'polyester',
     gramatura: 90,
@@ -170,17 +365,17 @@ export const sheets: Sheet[] = [
     hypoallergenic: false,
     oekotex: false,
     elastan: false,
+    country: 'Brak danych',
     pros: [
-      'Najniższa cena w teście - od 28,88 zł',
-      'Łatwa dostępność na Amazon.pl',
+      'Najniższa cena',
+      'Łatwa dostępność online',
     ],
     cons: [
-      '100% poliester - syntetyczny, słabo oddychający materiał',
-      'Najniższa gramatura w teście: 90 g/m²',
-      'Pranie maksymalnie 30°C - niewystarczające dla alergików',
-      'Brak certyfikatu Oeko-Tex®',
-      'Brak elastanu - może zsuwać się z materaca',
-      'Niska trwałość materiału przy regularnym praniu',
+      'Najniższa gramatura w rankingu',
+      'Słaba oddychalność',
+      'Pranie tylko 30°C',
+      'Niska trwałość',
+      'Brak certyfikatów',
     ],
   },
 ]
@@ -194,5 +389,7 @@ export function getSheetById(id: string): Sheet | undefined {
 }
 
 export function getSheetsByMaterialType(type: MaterialType): Sheet[] {
-  return sheets.filter(s => s.materialType === type).sort((a, b) => a.rank - b.rank)
+  return sheets
+    .filter(s => s.materialType === type)
+    .sort((a, b) => a.rank - b.rank)
 }
