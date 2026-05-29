@@ -101,7 +101,7 @@ export const sheets: Sheet[] = [
     slug: 'biberna-jersey-lidl',
     rank: 3,
     name: 'Prześcieradło Jersey Biberna',
-    brand: 'Biberna (Lidl)',
+    brand: 'Biberna (w sklepie Lidl)',
     price: 139,
     url: 'https://www.lidl.pl/p/biberna-przescieradlo-z-dzerseju-rozne-rozmiary/p100251944',
     image: '/images/sheets/biberna-jersey-lidl.jpg',

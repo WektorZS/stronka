@@ -193,16 +193,6 @@ export function SheetsPreview() {
                 <div className="flex gap-2">
                   <Button
                     asChild
-                    variant="outline"
-                    className="flex-1"
-                  >
-                    <Link href={`/recenzje-przescieradel/${sheet.id}`}>
-                      Recenzja
-                    </Link>
-                  </Button>
-
-                  <Button
-                    asChild
                     className="flex-1"
                   >
                     <a
