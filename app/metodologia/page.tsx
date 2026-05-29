@@ -102,7 +102,7 @@ const sheetCriteria = [
     name: 'Materiał',
     weight: 30,
     description:
-      'Bawełna jest zdecydowanie lepszym materiałem niż poliester (mikrofibra). Bawełna oddycha, pochłania wilgoć i nie generuje ładunków elektrostatycznych. Poliester jest tańszy, ale syntetyczny — gorsze oddychanie sprzyja poceniu się nocą.',
+      'Bawełna jest zdecydowanie lepszym materiałem niż poliester (mikrofibra). Bawełna oddycha, pochłania wilgoć i nie generuje ładunków elektrostatycznych. Poliester jest tańszy, ale syntetyczny - gorsze oddychanie sprzyja poceniu się nocą.',
     factors: [
       'Bawełna vs poliester',
       'Udział procentowy bawełny',
@@ -128,7 +128,7 @@ const sheetCriteria = [
     name: 'Temperatura prania',
     weight: 25,
     description:
-      'Kluczowy parametr dla alergików i osób dbających o higienę. Roztocza kurzu domowego i bakterie giną dopiero w 60°C. Pranie w 30°C lub 40°C nie zapewnia skutecznej eliminacji alergenów. Bawełna wytrzymuje 60°C, poliester nie — to poważna wada syntetyków.',
+      'Kluczowy parametr dla alergików i osób dbających o higienę. Roztocza kurzu domowego i bakterie giną dopiero w 60°C. Pranie w 30°C lub 40°C nie zapewnia skutecznej eliminacji alergenów. Bawełna wytrzymuje 60°C, poliester nie - to poważna wada syntetyków.',
     factors: [
       'Maksymalna temperatura prania',
       'Eliminacja roztoczy (min. 60°C)',
@@ -174,7 +174,7 @@ export default function MetodologiaPage() {
             Metodologia testów
           </h1>
           <p className="text-lg text-muted-foreground">
-            Testujemy produkty do sypialni — materace i prześcieradła — według jasno określonych
+            Testujemy produkty do sypialni - materace i prześcieradła - według jasno określonych
             kryteriów. Poniżej znajdziesz szczegółowy opis metodologii dla obu kategorii.
           </p>
         </div>
@@ -183,7 +183,7 @@ export default function MetodologiaPage() {
         <div className="mb-16">
           <h2 className="text-2xl font-bold text-foreground mb-6 flex items-center gap-3">
             <Bed className="w-6 h-6 text-primary" />
-            Metodologia — materace
+            Metodologia - materace
           </h2>
 
           {/* Overview */}
@@ -252,7 +252,7 @@ export default function MetodologiaPage() {
         <div className="mb-16" id="przescieradla">
           <h2 className="text-2xl font-bold text-foreground mb-6 flex items-center gap-3">
             <Layers className="w-6 h-6 text-emerald-600" />
-            Metodologia — prześcieradła
+            Metodologia - prześcieradła
           </h2>
 
           <Card className="mb-8">
@@ -263,7 +263,7 @@ export default function MetodologiaPage() {
               <p className="text-muted-foreground">
                 Prześcieradła oceniamy według 5 obiektywnych kryteriów, które mają realny wpływ
                 na komfort i higienę snu. Skupiamy się wyłącznie na parametrach technicznych
-                i dostępnych danych producentów — bez subiektywnych wrażeń estetycznych.
+                i dostępnych danych producentów - bez subiektywnych wrażeń estetycznych.
               </p>
               <p className="text-muted-foreground">
                 Kluczową zasadą jest wyraźne rozróżnienie między bawełną a poliestrem: bawełna jest

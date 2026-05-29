@@ -261,49 +261,7 @@ export default function RankingPrzescieradelPage() {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
 
-          {/* ─── How we test ──────────────────────────────────── */}
-          <section className="my-12">
-            <h2 className="text-2xl font-bold text-foreground mb-4">Jak testujemy prześcieradła?</h2>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              Każde prześcieradło oceniamy według 5 kryteriów, które mają realny wpływ
-              na komfort i higienę snu. Nie uwzględniamy subiektywnych cech wizualnych ani wzornictwa,
-              skupiamy się wyłącznie na parametrach technicznych i dostępnych danych producentów.
-            </p>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-3 mt-5">
-              {[
-                { icon: Layers, label: 'Materiał', desc: 'Bawełna > Poliester' },
-                { icon: Layers, label: 'Gramatura', desc: 'g/m² - im więcej, tym lepiej' },
-                { icon: Thermometer, label: 'Temp. prania', desc: '60°C = eliminacja roztoczy' },
-                { icon: ShieldCheck, label: 'Antyalergiczne', desc: 'Oeko-Tex® + pranie 60°C' },
-                { icon: Scale, label: 'Cena', desc: 'Stosunek jakości do ceny' },
-              ].map(({ icon: Icon, label, desc }) => (
-                <div key={label} className="flex flex-col items-start gap-1.5 p-4 rounded-xl bg-muted/50 border border-border">
-                  <Icon className="w-5 h-5 text-blue-600 shrink-0" />
-                  <p className="text-sm font-semibold text-foreground">{label}</p>
-                  <p className="text-xs text-muted-foreground leading-snug">{desc}</p>
-                </div>
-              ))}
-            </div>
-            <div className="mt-6 p-4 rounded-xl border bg-blue-50/50 border-blue-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-  <div>
-    <p className="font-semibold text-foreground text-sm">
-      Chcesz wiedzieć jak dokładnie testujemy?
-    </p>
-    <p className="text-xs text-muted-foreground">
-      Zobacz pełną metodologię, kryteria i sposób punktacji
-    </p>
-  </div>
-
-  <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white shrink-0">
-    <Link href="/metodologia">
-      Metodologia testów
-      <ArrowRight className="ml-2 h-4 w-4" />
-    </Link>
-  </Button>
-</div>
-          </section>
-
-         {/* ─── Summary verdict ──────────────────────────────── */}
+                {/* ─── Summary verdict ──────────────────────────────── */}
 <section className="mb-12">
   <h2 className="text-2xl font-bold text-foreground mb-4">Który wybrać? Krótkie podsumowanie</h2>
   <div className="grid sm:grid-cols-3 gap-4">
@@ -579,6 +537,48 @@ export default function RankingPrzescieradelPage() {
               </Link>
             </Button>
           </div>
+
+          {/* ─── How we test ──────────────────────────────────── */}
+          <section className="my-12">
+            <h2 className="text-2xl font-bold text-foreground mb-4">Jak testujemy prześcieradła?</h2>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              Każde prześcieradło oceniamy według 5 kryteriów, które mają realny wpływ
+              na komfort i higienę snu. Nie uwzględniamy subiektywnych cech wizualnych ani wzornictwa,
+              skupiamy się wyłącznie na parametrach technicznych i dostępnych danych producentów.
+            </p>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-3 mt-5">
+              {[
+                { icon: Layers, label: 'Materiał', desc: 'Bawełna > Poliester' },
+                { icon: Layers, label: 'Gramatura', desc: 'g/m² - im więcej, tym lepiej' },
+                { icon: Thermometer, label: 'Temp. prania', desc: '60°C = eliminacja roztoczy' },
+                { icon: ShieldCheck, label: 'Antyalergiczne', desc: 'Oeko-Tex® + pranie 60°C' },
+                { icon: Scale, label: 'Cena', desc: 'Stosunek jakości do ceny' },
+              ].map(({ icon: Icon, label, desc }) => (
+                <div key={label} className="flex flex-col items-start gap-1.5 p-4 rounded-xl bg-muted/50 border border-border">
+                  <Icon className="w-5 h-5 text-blue-600 shrink-0" />
+                  <p className="text-sm font-semibold text-foreground">{label}</p>
+                  <p className="text-xs text-muted-foreground leading-snug">{desc}</p>
+                </div>
+              ))}
+            </div>
+            <div className="mt-6 p-4 rounded-xl border bg-blue-50/50 border-blue-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+  <div>
+    <p className="font-semibold text-foreground text-sm">
+      Chcesz wiedzieć jak dokładnie testujemy?
+    </p>
+    <p className="text-xs text-muted-foreground">
+      Zobacz pełną metodologię, kryteria i sposób punktacji
+    </p>
+  </div>
+
+  <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white shrink-0">
+    <Link href="/metodologia">
+      Metodologia testów
+      <ArrowRight className="ml-2 h-4 w-4" />
+    </Link>
+  </Button>
+</div>
+          </section>
 
           {/* ─── Cross-link to mattresses ─────────────────────── */}
           <div className="rounded-xl border border-border bg-muted/40 p-6 text-center">
