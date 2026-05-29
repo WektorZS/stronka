@@ -329,22 +329,27 @@ export default function RankingPrzescieradelPage() {
               </div>
 
               {/* badges */}
-              <div className="flex flex-wrap gap-2 mb-3">
-                {sheet.oekotex && (
-                  <Badge className="bg-blue-100 text-blue-700 border-0">
-                    Oeko-Tex®
-                  </Badge>
-                )}
-                {sheet.materialType === 'cotton' ? (
-                  <Badge className="bg-green-100 text-green-700 border-0">
-                    Bawełna
-                  </Badge>
-                ) : (
-                  <Badge className="bg-slate-100 text-slate-600 border-0">
-                    Poliester
-                  </Badge>
-                )}
-              </div>
+<div className="flex flex-wrap gap-2 mb-3">
+  {sheet.oekotex && (
+    <Badge className="bg-blue-100 text-blue-700 border-0">
+      Oeko-Tex®
+    </Badge>
+  )}
+
+  {sheet.materialType === 'cotton' ? (
+    <Badge className="bg-green-100 text-green-700 border-0">
+      Bawełna
+    </Badge>
+  ) : (
+    <Badge className="bg-slate-100 text-slate-600 border-0">
+      Poliester
+    </Badge>
+  )}
+
+  <Badge className="bg-slate-100 text-slate-700 border-0">
+    Produkcja: {sheet.country}
+  </Badge>
+</div>
 
               {/* short */}
               <p className="text-sm text-muted-foreground mb-4">
