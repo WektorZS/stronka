@@ -103,7 +103,7 @@ export default function HomePage() {
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-3">
                 <Search className="w-6 h-6 text-primary" />
               </div>
-              <span className="text-3xl font-bold text-foreground">15</span>
+              <span className="text-3xl font-bold text-foreground">20</span>
               <span className="text-sm text-muted-foreground mt-1">Produktów w testach</span>
             </div>
             <div className="flex flex-col items-center text-center p-4">
