@@ -352,7 +352,7 @@ export default function MetodologiaPage() {
           <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-6 text-center">
             <h3 className="text-xl font-bold text-foreground mb-3">Ranking prześcieradeł</h3>
             <p className="text-muted-foreground mb-4 text-sm">
-              Sprawdź nasz ranking Top 5 prześcieradeł jersey z gumką w rozmiarze 90&times;200 cm.
+              Sprawdź nasz ranking Top 10 prześcieradeł jersey z gumką w rozmiarze 90&times;200 cm.
             </p>
             <Button asChild size="sm" className="bg-emerald-600 hover:bg-emerald-700 text-white">
               <Link href="/ranking-przescieradel">
