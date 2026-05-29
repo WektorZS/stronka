@@ -465,7 +465,7 @@ export default function RankingPrzescieradelPage() {
                     <Check className="w-4 h-4 text-blue-600 shrink-0 mt-0.5" />
                     <div>
                       <p className="text-sm font-semibold text-blue-800">Bawełna</p>
-                      <p className="text-xs text-blue-700">Oddycha, pochłania wilgoć, brak elektryczności statycznej, lepsza dla alergików</p>
+                      <p className="text-xs text-blue-700">Oddycha, pochłania wilgoć, nie elektryzuje się, lepsza dla alergików</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3 p-3 rounded-lg bg-slate-50 border border-slate-200">
