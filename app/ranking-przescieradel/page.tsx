@@ -246,42 +246,43 @@ export default function RankingPrzescieradelPage() {
             </div>
           </section>
 
-          {/* ─── Summary verdict ──────────────────────────────── */}
-          <section className="mb-12">
-            <h2 className="text-2xl font-bold text-foreground mb-4">Który wybrać? Krótkie podsumowanie</h2>
-            <div className="grid sm:grid-cols-3 gap-4">
-              <Card className="border-blue-200 bg-blue-50/50">
-                <CardContent className="p-5">
-                  <Badge className="bg-blue-600 text-white border-0 mb-3">Wybór redakcji</Badge>
-                  <p className="font-semibold text-foreground text-sm mb-1">bett1 BODYGUARD®</p>
-                  <p className="text-xs text-muted-foreground leading-relaxed">
-                    Najwyższa gramatura (240 g/m²), certyfikat Oeko-Tex®, pranie 60°C,
-                    96% bawełna - najlepszy dla alergików i wymagających.
-                  </p>
-                </CardContent>
-              </Card>
-              <Card className="border-amber-200 bg-amber-50/50">
-                <CardContent className="p-5">
-                  <Badge className="bg-amber-500 text-white border-0 mb-3">Najlepsza cena/jakość</Badge>
-                  <p className="font-semibold text-foreground text-sm mb-1">JYSK JENNY</p>
-                  <p className="text-xs text-muted-foreground leading-relaxed">
-                    100% bawełna, Oeko-Tex®, pranie 60°C za jedyne 32,50 zł.
-                    Niska gramatura to kompromis, ale jakość certyfikowana.
-                  </p>
-                </CardContent>
-              </Card>
-              <Card className="border-slate-200 bg-slate-50/50">
-                <CardContent className="p-5">
-                  <Badge className="bg-slate-500 text-white border-0 mb-3">Tylko budżetowe</Badge>
-                  <p className="font-semibold text-foreground text-sm mb-1">Terra Beds / home&you</p>
-                  <p className="text-xs text-muted-foreground leading-relaxed">
-                    Poliester ogranicza oddychalność i higienę. Pranie max 30-40°C
-                    może być mniej korzystny dla alergików. Opcja budżetowa.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-          </section>
+         {/* ─── Summary verdict ──────────────────────────────── */}
+<section className="mb-12">
+  <h2 className="text-2xl font-bold text-foreground mb-4">Który wybrać? Krótkie podsumowanie</h2>
+  <div className="grid sm:grid-cols-3 gap-4">
+
+    <Card className="border-blue-200 bg-blue-50/50">
+      <CardContent className="p-5">
+        <Badge className="bg-blue-600 text-white border-0 mb-3">Wybór redakcji</Badge>
+        <p className="font-semibold text-foreground text-sm mb-1">bett1 BODYGUARD®</p>
+        <p className="text-xs text-muted-foreground leading-relaxed">
+          Najwyższa gramatura 240 g/m², 96% bawełna, pranie 60°C i Oeko-Tex®. Najlepsza higiena, trwałość i komfort snu w całym zestawieniu.
+        </p>
+      </CardContent>
+    </Card>
+
+    <Card className="border-amber-200 bg-amber-50/50">
+      <CardContent className="p-5">
+        <Badge className="bg-amber-500 text-white border-0 mb-3">Niezła jakość w niezłej cenie</Badge>
+        <p className="font-semibold text-foreground text-sm mb-1">SCHÖNER WOHNEN Jersey</p>
+        <p className="text-xs text-muted-foreground leading-relaxed">
+          180 g/m², 95% bawełna, pranie 60°C i Oeko-Tex®. Bardzo dobry kompromis jakości, elastyczności i ceny.
+        </p>
+      </CardContent>
+    </Card>
+
+    <Card className="border-slate-200 bg-slate-50/50">
+      <CardContent className="p-5">
+        <Badge className="bg-slate-500 text-white border-0 mb-3">Opcja budżetowa</Badge>
+        <p className="font-semibold text-foreground text-sm mb-1">JYSK JENNY</p>
+        <p className="text-xs text-muted-foreground leading-relaxed">
+          130 g/m², 100% bawełna i pranie 60°C. Niska cena, dobra higiena, ale słabsza trwałość niż top modele.
+        </p>
+      </CardContent>
+    </Card>
+
+  </div>
+</section>
 
           {/* ─── Individual product deep-dives ───────────────── */}
 {/* ─── Ranking Section (NOWY LAYOUT) ─────────────────────── */}
@@ -365,15 +366,6 @@ export default function RankingPrzescieradelPage() {
     </Badge>
   )}
 
-  {sheet.materialType === 'cotton' ? (
-    <Badge className="bg-green-100 text-green-700 border-0">
-      Bawełna
-    </Badge>
-  ) : (
-    <Badge className="bg-slate-100 text-slate-600 border-0">
-      Poliester
-    </Badge>
-  )}
 
 <CountryBadge country={sheet.country} />
 
